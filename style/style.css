@@ -9,21 +9,25 @@ header {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    
-    
-    
+     
     
 }
 
 .bg-header {
     height: 100vh;
     background-size: cover;
+    position: relative;
     float: right;
     padding: 0;
     z-index: -100;
 }
 
 .bg-header img {
+background-size: cover;
+max-width: 1676px;
+min-width: 1200px;
+max-height: 1100px;
+min-height: 700px;
 
 }
 
@@ -142,8 +146,13 @@ nav {
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
+    transition: all 0.4s;
 }
 
+.call-text button:hover {
+    transition: all 0.4s;
+    margin-left: 8px;
+}
 .call-text button:focus {
     outline: none;
 }
@@ -239,6 +248,10 @@ nav {
     
 }
 
+.box-text button:hover {
+    transition: all 0.4s;
+    margin-left: 8px;
+}
 .box-text button:focus {
     outline: none;
 }
@@ -301,16 +314,52 @@ nav {
     align-items: center;
     flex-direction: row;
 
+
 }
 .cards-style {
 
     width: 380px;
-    height: 500px;
+    height: 450px;
     background-color: white;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
-    border-radius: 8px;
+    opacity: 0.8;
+    transition: ease-out 0.3s;
+
+}
+
+.cards-style:hover {
+    transition: ease-in 0.3s;
+    opacity: 1;
+}
+.cards-style h3 {
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: 22px;
+    color: #333;
+    margin: 20px;
+}
+
+.cards-style i {
+    margin: 0;
+    font-size: 60px;
+}
+.inside-card {
+width: 340px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inside-card p {
+    color: #665;
+    font-family: 'roboto';
+    font-weight: 400;
+    text-align: center;
+    font-size: 18px;
 }
