@@ -435,3 +435,12 @@ width: 340px;
     font-size: 17px;
     width: 500px;
 }
+
+@media screen and (max-width: 1366px){
+    
+    .bg-header img {
+       
+        height: 800px;
+        width: 1300px;
+    }
+}
