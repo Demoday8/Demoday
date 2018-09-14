@@ -14,20 +14,20 @@ header {
 }
 
 .bg-header {
-    height: 100vh;
+
     background-size: cover;
     position: relative;
     float: right;
     padding: 0;
     z-index: -100;
+
+
 }
 
 .bg-header img {
 background-size: cover;
 max-width: 1676px;
-min-width: 1200px;
-max-height: 1100px;
-min-height: 700px;
+height: 800px;
 
 }
 
@@ -159,7 +159,7 @@ nav {
 
 .main-container {
     
-    margin-top: 100px;
+    margin-top: 20px;
     padding: 0;
     z-index: 1;
     border: 1px solid black;
@@ -175,7 +175,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: initial;
     z-index: 2;
     border: 1px solid black;
     
@@ -199,6 +199,7 @@ nav {
 }
 
 .box-text {
+    margin: 0;
     width: 45vw;
     
 }
@@ -267,6 +268,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   
 }
 
@@ -277,7 +279,7 @@ nav {
     align-items: center;
     z-index: 2;
     position: relative;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .box-text-2 h2 {
@@ -365,7 +367,8 @@ width: 340px;
 }
 
 .depoiments {
-    height: 60vh;
+    margin-top: 50px;
+    height: 50vh;
     border: 1px solid black;
     display: flex;
     justify-content: space-around;
@@ -436,11 +439,25 @@ width: 340px;
     width: 500px;
 }
 
-@media screen and (max-width: 1366px){
+@media screen and (max-width: 1600px){
     
-    .bg-header img {
+    .call-text {
        
-        height: 800px;
-        width: 1300px;
+       margin-left: 50px;
     }
+ 
+
+.box-text h2 {
+    font-size: 35px;
+}
+
+.box-text p {
+    font-size: 20px;
+}
+
+.depoiments {
+    margin-top: 200px;
+
+}
+
 }
