@@ -159,7 +159,11 @@ nav {
 
 .main-container {
     
+<<<<<<< HEAD
     margin-top: 50px;
+=======
+    margin-top: 20px;
+>>>>>>> eb0471e102df4c84a02c0efa7a826b4c6bd14a25
     padding: 0;
     z-index: 1;
     border: 1px solid black;
@@ -367,7 +371,9 @@ width: 340px;
 }
 
 .depoiments {
-    height: 60vh;
+    margin-top: 50px;
+    height: 50vh;
+    border: 1px solid black;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -450,6 +456,28 @@ position: absolute;
     font-weight: 400;
     text-align: left;
     font-size: 17px;
-    padding-top: 10px;;
-    padding-left: 30px;
+    width: 500px;
+}
+
+@media screen and (max-width: 1600px){
+    
+    .call-text {
+       
+       margin-left: 50px;
+    }
+ 
+
+.box-text h2 {
+    font-size: 35px;
+}
+
+.box-text p {
+    font-size: 20px;
+}
+
+.depoiments {
+    margin-top: 200px;
+
+}
+
 }
