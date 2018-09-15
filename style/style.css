@@ -371,9 +371,13 @@ width: 340px;
 }
 
 .depoiments {
+<<<<<<< HEAD
+    height: 60vh;
+=======
     margin-top: 50px;
     height: 50vh;
     border: 1px solid black;
+>>>>>>> eb0471e102df4c84a02c0efa7a826b4c6bd14a25
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -456,6 +460,9 @@ position: absolute;
     font-weight: 400;
     text-align: left;
     font-size: 17px;
+    padding-top: 10px;;
+    padding-left: 30px;
+}
     width: 500px;
 }
 
