@@ -531,6 +531,83 @@ flex-flow: row wrap;
     font-size: 16px;
     line-height: 1.2;
 }
+
+footer {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    background-color: rgb(32, 199, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-footer {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+   
+}
+
+
+.icones {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.icones i {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 25px;
+color: white;
+height: 40px;
+width: 40px;
+border: 2px solid white;
+border-radius: 100px;
+transition: .3s ease;
+cursor: pointer;
+ 
+}
+
+.icones i:hover {
+    transition: .3s ease;
+color: black;
+background-color: white;
+}
+.nav-footer h1 {
+    color: white;
+    font-family: 'roboto';
+    font-weight: bold;
+}
+
+.links-footer a {
+    color: white;
+    font-family: 'roboto';
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px 18px;
+
+}
+
+.links-footer i {
+text-align: center;
+color: white;
+padding: 20px;
+background-color: rgba(0,0,0,0.8);
+border-radius: 100px;
+cursor: pointer;
+margin-left: 50px;
+}
+
 @media screen and (max-width: 1600px){
     
     .call-text {
