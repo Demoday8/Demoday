@@ -15,8 +15,7 @@ body {
                          /* GRID GAP CORRESPONDE AO ESPAÇO DE CADA ELEMENTO DA GRID */
                          grid-gap: 1rem; 
                          box-sizing: border-box;
-
-
+overflow-x: hidden;
    
 }
 
@@ -61,7 +60,11 @@ body{
     .main-content {flex-direction: column;}
 }
 
-
+header {
+    width: 100vw;
+margin: 0;
+padding: 0;
+}
 
 .header-container {
     display: flex;
