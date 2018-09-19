@@ -13,23 +13,6 @@ header {
     
 }
 
-.bg-header {
-
-    background-size: cover;
-    position: relative;
-    float: right;
-    padding: 0;
-    z-index: -100;
-
-
-}
-
-.bg-header img {
-background-size: cover;
-max-width: 1676px;
-height: 900px;
-
-}
 
 #logo {
     width: 200px;
@@ -162,18 +145,6 @@ nav {
     padding: 0;
     z-index: 1;
     
-}
-
-.svg {
-    
-    
-    z-index: -1;
-    margin: 0;
-    padding: 0;    
-position: absolute;
-width: 100%;
-height: 573px;
-background-image: url(../img/svg-bg.png);
 }
 
 .primeira-section {
