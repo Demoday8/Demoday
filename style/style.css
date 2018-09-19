@@ -4,10 +4,15 @@ body {
     display: grid; 
     grid-template-areas: "header header" 
                          "nav nav" 
-                         "aside article"
                          "main main"
+                         "section section"
                          "footer footer";
-                         grid-template-rows:65vh 0vh 30vh 50vh 20vh;
+                        /* PESSOAS, AQUI ESTÁ A ALTURA DE CADA ELEMENTO EM ORDEM, OU SEJA, 
+                        O GRID-TEMPLATE-ROWS ESTÁ DIZENDO QUE O HEADER TEM 65VH, A NAV 0VH(É MELHOR PQ EU POSSO MODIFICAR)
+                        E ASSIM EM DIANTE... */
+                         grid-template-rows:65vh 0vh 80vh 50vh 20vh;
+
+                         /* GRID GAP CORRESPONDE AO ESPAÇO DE CADA ELEMENTO DA GRID */
                          grid-gap: 1rem; 
                          box-sizing: border-box;
 
@@ -29,12 +34,9 @@ body {
 }
 
 
-.article{
-    grid-area: article; background-color: rosybrown;
-    
-}
-.main-aside {
-    grid-area: aside; background-color: rosybrown;
+
+.main-section {
+    grid-area: section; background-color: rosybrown;
     
 }
 
@@ -54,9 +56,12 @@ body {
 @media screen and (max-width: 768px) {
 
 body{
-        grid-template-areas: "header" "nav" "article" "aside" "main" "footer";
+        grid-template-areas: "header" "nav" "main" "section"  "footer";
     }
+    .main-content {flex-direction: column;}
 }
+
+
 
 .header-container {
     display: flex;
@@ -223,3 +228,17 @@ color: white;
     outline: none;
 }
 
+.main-content {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row column;
+}
+
+.main-content div {
+    height: 500px;
+    width: 400px;
+    background-color: #009EFF;
+margin: 50px;
+}
