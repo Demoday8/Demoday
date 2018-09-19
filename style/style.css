@@ -7,8 +7,9 @@ body {
                          "aside article"
                          "main main"
                          "footer footer";
-                         grid-template-rows:50vh 0vh 30vh 50vh 20vh;
+                         grid-template-rows:65vh 0vh 30vh 50vh 20vh;
                          grid-gap: 1rem; 
+                         box-sizing: border-box;
 
 
    
@@ -17,8 +18,8 @@ body {
 
 
 .main-header {
-    grid-area: header; background-color: red;  margin: 0;
-    padding: 0; }
+    grid-area: header; margin: 0;
+    padding: 0;  background-color: white;}
 
 
 .main-nav{
@@ -57,7 +58,106 @@ body{
     }
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+flex-direction: row;
+    height: 60vh;
+}
 
+.imgHeader img {
+    height: 450px;
+    width: 550px;
+}
+
+.chamadaTexto {
+
+    color: #009EFF;
+    margin: 0;
+    width: 400px;
+    height: 290px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.chamadaTexto h1 {
+    font-family: 'ubuntu';
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0;
+
+}
+
+.chamadaTexto p {
+    width: 380px;
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #444;
+
+}
+
+.chamadaTexto button {
+    max-width: 250px;
+    min-width: 200px;
+    max-height: 75px;
+    min-height: 45px;
+    border: none;
+    border-radius: 100px;
+    border: 1px solid #009EFF;
+    color: #009EFF;
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.chamadaTexto button:hover {
+    transition: 0.1s ease;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+
+}
+
+.chamadaTexto button:focus {
+    outline: none;
+}
+
+.icones-header {
+    width: 200px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icones-header i {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+text-align: center;
+font-size: 18px;
+height: 48px;
+width: 48px;
+border-radius: 100px;
+border: 1px solid #009EFF;
+cursor: pointer;
+transition: .2s ease;
+
+
+}
+.icones-header i:hover {
+    transition: .2s ease;
+background-color: #009EFF;
+color: white;
+}
  nav {
     margin-top: 20px;
     height: 80px;
@@ -67,6 +167,7 @@ body{
     align-items: center;
     flex-direction: row; 
     background-color: white;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 #logo {
     height: 45px;
