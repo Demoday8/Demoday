@@ -7,69 +7,116 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
-    <script defer src="script.js/script.js"> </script>    <title>Demoday</title>
+    <link rel="shortcut icon" href="./img/logoJovem1.png">
+    <script defer src="script.js/script.js"> </script>    
+    <title>Jovem+ | Formação para Jovens</title>
 </head>
 <body>
-  
-           
-        <header class="main-header"> 
-            <!-- MENU AQUI -->
-            <nav class="main-nav">
-                    <img id ="logo" src="img/example-logo.png" alt="">
-       
-                    <div class="nav-items"> 
-       
-                           <a href="#"> Benefícios</a>
-                           <a href="#"> Contato</a>
-                           <a href="#"> Inscreva-se</a>
-                           <button id="btn-nav"> Entrar </button>
-       
-                       </div>
-                   </nav>
-
-                   <!-- DIV PAI COM DISPLAY FLEX PARA ALINHAR OS ITENS DO HEADER -->
-                   <div class="header-container"> 
-<!-- CHAMADA DE TEXTO DO HEADER  -->
-                   <aside class="chamadaTexto">
-
-                    <h1>Empresas protagonistas</h1>
-                    <p>Na formação profissional de jovens carentes,
-                    proporcionando mais oportunidades no mercado de trabalho.
-                    </p>
-<button>Como funciona</button>
-
-<!-- OS ICONES DO HEADER ESTAO AQUI AMIGOS -->
-<div class="icones-header">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-</div>
-
-                   </aside>
-<!-- ILUSTRAÇÃO/IMAGEM DO HEADER AQUI FRIENDS -->
-                   <div class="imgHeader">
-                       <img src="img/img-container.png" alt=""> </div>
-                    </div>
-          </header>
-
-          <!-- AS DIVS FORAM APENAS PARA TESTAR A RESPONSIVIDADE DA GRID -->
-          <main class="main-content"> 
-                <div> </div>
-
-                <div> </div>
-
-
-          </main>
-
-          <section class="main-section">  seçao</section>
-
-        <!-- <-----A TAG MAIN SERVE PARA DIZER O CONTEÚDO PRINCIPAL DO NOSSO SITE!        
-        PARA MANTER A SEMÂNTICA UTILIZAREI ELA AO INVÉS DE FICAR SÓ USANDO SECTIONS E DIV! -->
-
     
-            <footer class="main-footer">
-             footer
-                </footer> 
-   
+    
+    <header class="main-header"> 
+        <!-- MENU AQUI -->
+        <nav class="main-nav">
+            <img id ="logo" src="img/jovem-mais-colorido.png" alt="Jovem Mais">
+            
+            <div class="nav-items"> 
+                
+                <a href="#"> Benefícios</a>
+                <a href="#"> Contato</a>
+                <a href="#"> Inscreva-se</a>
+                <button id="btn-nav"> Entrar </button>
+                
+            </div>
+        </nav>
+        
+        <!-- DIV PAI COM DISPLAY FLEX PARA ALINHAR OS ITENS DO HEADER -->
+        <div class="header-container"> 
+            <!-- CHAMADA DE TEXTO DO HEADER  -->
+            <aside class="chamadaTexto">
+                
+                <h1>Empresas protagonistas</h1>
+                <p>Na formação profissional de jovens carentes,
+                    proporcionando mais oportunidades no mercado de trabalho.
+                </p>
+                <div class="buttom-icones">
+                    <button>Como funciona</button>
+                    
+                    <!-- OS ICONES DO HEADER ESTAO AQUI AMIGOS -->
+                    <div class="icones-header">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                
+            </aside>
+            <!-- ILUSTRAÇÃO/IMAGEM DO HEADER AQUI FRIENDS -->
+            <div class="imgHeader">
+                <img src="img/alunos.png" alt="Alunos"> </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- AS DIVS FORAM APENAS PARA TESTAR A RESPONSIVIDADE DA GRID -->
+    <main class="main-content"> 
+        <div id="box-pq-jovem">
+            <div class="box-incentivo box1">
+                <p>Tenha o <span>Jovem+</span> na sua empresa</p>
+                <button class="buttom-incentivo">Benefícios</button>
+            </div>
+            
+            <div class="box-incentivo box2"> 
+                <p>Seja um <span>Jovem+</span> !</p>
+                <button class="buttom-incentivo">Benefícios</button>
+            </div>
+        </div>
+        <div class="box-pq-jovem">
+            <div class="text-pq">
+                <h2>Porque o Jovem+?</h2>
+                <p>O Jovem+ é um programa social de educação profissional para jovens de baixa renda, promovendo cidadania entre empresas e comunidades.</p>
+            </div>
+            <div class="imgTextPq">
+                <img src="img/pq.png" alt="Porque Jovem Mais?">
+            </div>
+        </div>
+    </main>
+    
+    <!-- SECTION: COMO FUNCIONA? DISPLAY FLEX E EM COLUNA-->
+    <section class="main-section"> 
+
+        <!-- DIV PARA CENTRALIZAR TEXTOS -->
+        <div class="como-func">
+            <h2>Como funciona?</h2>
+            <p>A empresa faz um investimento direto no Jovem+, exercendo sua responsabilidade social, além de levar educação e cultura aos jovens de renda baixa.</p>
+        </div>
+
+        <!-- DIV PARA CENTRALIZAR OS ICONES E SEUS TEXTOS -->
+        <div class="func-icones">
+            <div class="func-div">
+                <img src="img/formacao.png" alt="Formação">
+                <h3>Formação de qualidade</h3>
+                <p>Cursos de educação profissional para jovens de baixa renda com auxílio transporte.</p>
+            </div>
+            <div class="func-div">
+                <img src="img/voluntario.png" alt="voluntário">
+                <h3>Voluntariado</h3>
+                <p>Os educadores voluntários são os próprios funcionários das companhias parceiras.</p>
+            </div>
+            <div class="func-div">
+                <img src="img/modelo-social.png" alt="modelo social">
+                <h3>Modelo Social</h3>
+                <p>A empresa adota o Jovem+ por meio de uma franquia social, investindo diretamente no modelo social do projeto.</p> 
+            </div>
+        </div>
+    </section>
+    
+    <!-- <-----A TAG MAIN SERVE PARA DIZER O CONTEÚDO PRINCIPAL DO NOSSO SITE!        
+        PARA MANTER A SEMÂNTICA UTILIZAREI ELA AO INVÉS DE FICAR SÓ USANDO SECTIONS E DIV! -->
+        
+        
+        <footer class="main-footer">
+            footer
+        </footer> 
+        
     </body>
     </html>
