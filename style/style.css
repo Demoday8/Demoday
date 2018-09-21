@@ -105,6 +105,7 @@ nav {
 #logo {
     height: 65px;
     width: 170px;
+    transition: .8s;
 }
 
 .nav-items {
