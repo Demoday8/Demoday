@@ -1,0 +1,75 @@
+.main-depoimento{
+    padding: 100px;
+}
+
+.bloco-depoimento{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h2{
+    font-family: 'ubuntu';
+    font-weight: 550;
+    font-size: 4.5rem;
+    margin: 0;
+    color:rgb(0, 201, 255);
+}
+
+h3{
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: black;
+    border-radius: 50%;
+}
+
+p{
+    width: 80%;
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: 300;
+    font-size: 1.1rem;
+    color:rgb(175, 171, 171);
+    text-align: justify;
+}
+
+.depoimento{
+    bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    width: 27%;
+    background-color: white;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.4);
+    border-radius: 10px; 
+}
+
+.perfil-depoimento{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.perfil-depoimento img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.perfil-depoimento p{
+        width: 100%;
+}
+
+.perfil-depoimento span{
+    color: rgb(0, 201, 255);
+    font-weight: bold;
+}
