@@ -40,6 +40,11 @@ nav {
 }
 
 .nav-items {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 90vw;
     font-family: 'ubuntu';
 }
 
@@ -287,7 +292,6 @@ background-color: black;}
 }
 
 nav {
-    margin-top: 20px;
     height: 80px;
     z-index: 1;
     justify-content: space-between;
@@ -319,290 +323,21 @@ justify-content: space-between;
     transform: scale(1.2);
     color: rgb(0, 201, 255);
 }
-#menu-hamburguer{display: flex;
+#menu-hamburguer{margin-right: 10px;display: flex;
 }
-#btn-nav {
-    max-width: 300px;
-    min-width: 140px;
-    min-height: 30px;
-    max-height: 45px;
-    padding: 12px;
-    margin: 10px;
-    border: none;
-    border-radius: 100px;
-    background-color: transparent;
-    color: black;
-    font-family: 'ubuntu';
-    font-weight: 500;
+.imgHeader{display: none;}
+.chamadaTexto{margin-left: 20px;}
+.chamadaTexto h1{
+font-size: 3rem;
+}
+
+.chamadaTexto p {
     font-size: 1.2rem;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.5s;
-    box-sizing: border-box;
-    
-    
+    word-break: break;
+    width: 80%; 
 }
+.icones-header{align-content: flex-start; justify-content: flex-start;}
+.icones-header i {margin: 10px;}
 
-#btn-nav:hover {
-    box-sizing: border-box;
-    transform: scale(1.05);
-    transition: 0.5s;
-    box-shadow: 0 0 25px rgba(0, 201, 255, 0.5);
-    border: 1px solid rgb(0, 201, 255);
+
 }
-
-#btn-nav:focus {
-    outline: none;
-}
-
-/* BOTAO ENVIAR */
-.icones-header {
-    width: 100%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-
-.icones-header i {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
-    font-size: 18px;
-    height: 48px;
-    width: 48px;
-    border-radius: 100px;
-    border: 1px solid rgb(0, 201, 255);
-    cursor: pointer;
-    transition: .2s ease;   
-}
-
-.icones-header i:hover {
-    transition: .2s ease;
-    background-color:rgb(0, 201, 255);
-    color: white;
-}
-
-/* PARTICIPE */
-.part-header-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    height: 85vh;
-    width: 100%;
-}
-
-.part-imgHeader img {
-    margin-left: 50px;
-    height: 78vh;
-    width: 47vw;
-}
-
-.part-chamadaTexto {
-    
-    color: rgb(0, 170, 212); /*Azul médio*/
-    margin: 0;
-    width: 700px;
-    height: 290px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.part-chamadaTexto h1 {
-    font-family: 'ubuntu';
-    font-weight: 650;
-    font-size: 4.5rem;
-    margin: 0;
-    
-}
-
-.part-chamadaTexto p {
-    margin-top: 20px;
-    width: 580px;
-    word-wrap:normal;
-    font-family: 'ubuntu';
-    font-weight: 300;
-    font-size: 1.7rem;
-    color: rgb(208, 206, 206);
-}
-}
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1200px) {
-
-    .header-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-        height: 85vh;
-    }
-    
-    .imgHeader img {
-        margin-left: 50px;
-        height: 78vh;
-        width: 47vw;
-    }
-    
-    nav {
-        margin-top: 20px;
-        height: 80px;
-        z-index: 1;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row; 
-        background-color: white;
-        box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-    }
-    
-    #logo {
-        height: 35px;
-        width: 170px;
-        transition: .8s;
-    }
-    
-    .nav-items {
-        font-family: 'ubuntu';
-    }
-    
-    .nav-items a {
-        color: black;
-        transform: scale(1.2);
-        font-family: 'ubuntu';
-        font-weight: Bolder than 300;
-        font-size: 1.4rem;
-        text-decoration: none;
-        padding: 0px 18px;
-        box-sizing: border-box;
-        
-    }
-    
-    .nav-items a:hover{
-        transform: scale(1.2);
-        color: rgb(0, 201, 255);
-    }
-    
-    #btn-nav {
-        max-width: 300px;
-        min-width: 140px;
-        min-height: 30px;
-        max-height: 45px;
-        padding: 12px;
-        margin: 10px;
-        border: none;
-        border-radius: 100px;
-        background-color: transparent;
-        color: black;
-        font-family: 'ubuntu';
-        font-weight: 500;
-        font-size: 1.2rem;
-        text-align: center;
-        cursor: pointer;
-        transition: 0.5s;
-        box-sizing: border-box;
-        
-        
-    }
-    
-    #btn-nav:hover {
-        box-sizing: border-box;
-        transform: scale(1.05);
-        transition: 0.5s;
-        box-shadow: 0 0 25px rgba(0, 201, 255, 0.5);
-        border: 1px solid rgb(0, 201, 255);
-    }
-    
-    #btn-nav:focus {
-        outline: none;
-    }
-    
-    /* BOTAO ENVIAR */
-    .icones-header {
-        width: 100%;
-        margin-top: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-    }
-    
-    .icones-header i {
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        text-align: center;
-        font-size: 18px;
-        height: 48px;
-        width: 48px;
-        border-radius: 100px;
-        border: 1px solid rgb(0, 201, 255);
-        cursor: pointer;
-        transition: .2s ease;   
-    }
-    
-    .icones-header i:hover {
-        transition: .2s ease;
-        background-color:rgb(0, 201, 255);
-        color: white;
-    }    
-    
-    /* PARTICIPE */  
-    .part-header-container {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: row;
-        height: 85vh;
-        width: 100%;
-    }
-    
-    .part-imgHeader img {
-        margin-left: 50px;
-        height: 78vh;
-        width: 47vw;
-    }
-    
-    .part-chamadaTexto {
-        
-        color: rgb(0, 170, 212); /*Azul médio*/
-        margin: 0;
-        width: 700px;
-        height: 290px;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .part-chamadaTexto h1 {
-        font-family: 'ubuntu';
-        font-weight: 650;
-        font-size: 4.5rem;
-        margin: 0;
-        
-    }
-    
-    .part-chamadaTexto p {
-        margin-top: 20px;
-        width: 580px;
-        word-wrap:normal;
-        font-family: 'ubuntu';
-        font-weight: 300;
-        font-size: 1.7rem;
-        color: rgb(208, 206, 206);
-    }
-}
-
