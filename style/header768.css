@@ -33,8 +33,13 @@
     }
     
     .nav-items {
-        margin-left: 230px;
-        font-family: 'ubuntu';
+        display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+width: 80vw;
+font-family: 'ubuntu';
+
     }
     
     .nav-items a {

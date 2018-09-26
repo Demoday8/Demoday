@@ -40,7 +40,6 @@ nav {
 }
 
 .nav-items {
-    margin-left: 230px;
     font-family: 'ubuntu';
 }
 
@@ -251,20 +250,35 @@ nav {
 
 
 
-
-
-
-
-
-@media screen and (max-width: 1024px) {
-    
-.header-container {
-    display: flex;
+#menu-hamburguer{
+    height: 35px;
+    width: 35px;
+    right: 0;
+    position: absolute;
+    border: 1px solid red;
+    display: none;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
-    height: 85vh;
+    flex-direction: column;
+
 }
+
+.barra {
+        height: 4px;
+        width: 30px;
+        background-color: black;
+
+    }
+
+
+
+
+@media screen and (max-width: 568px) {
+    
+.header-container {
+    justify-content: space-between;
+width: 100%;
+background-color: black;}
 
 .imgHeader img {
     margin-left: 50px;
@@ -276,8 +290,7 @@ nav {
     margin-top: 20px;
     height: 80px;
     z-index: 1;
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row; 
     background-color: white;
@@ -291,27 +304,23 @@ nav {
 }
 
 .nav-items {
-    margin-left: 230px;
-    font-family: 'ubuntu';
+width: 80vw;    
+font-family: 'ubuntu';
+justify-content: space-between;
 }
 
-.nav-items a {
-    color: black;
-    transform: scale(1.2);
-    font-family: 'ubuntu';
-    font-weight: Bolder than 300;
-    font-size: 1.4rem;
-    text-decoration: none;
-    padding: 0px 18px;
-    box-sizing: border-box;
-    
+
+
+.nav-items a, button {
+    display: none;
 }
 
 .nav-items a:hover{
     transform: scale(1.2);
     color: rgb(0, 201, 255);
 }
-
+#menu-hamburguer{display: flex;
+}
 #btn-nav {
     max-width: 300px;
     min-width: 140px;
@@ -466,7 +475,6 @@ nav {
     }
     
     .nav-items {
-        margin-left: 230px;
         font-family: 'ubuntu';
     }
     
@@ -597,3 +605,4 @@ nav {
         color: rgb(208, 206, 206);
     }
 }
+
