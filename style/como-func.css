@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: space-evenly;
+    align-items: center;
 }
 
 .como-func{
@@ -27,31 +27,36 @@
 } 
 
 .como-func p{
-    word-wrap:normal;
+    width: 100%;
     font-family: 'ubuntu';
     font-weight: 300;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     color:rgb(208, 206, 206);
     text-align: center;
 }
 
 
 .func-icones{
-    margin: 40px auto;
+
     width: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center; 
 }
 
 .func-div{
-    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    height: 200px;
     text-align: center;
 }
 
 .func-div p{
-    word-wrap:normal;
+
     font-family: 'ubuntu';
     font-weight: 300;
     font-size: 1.1rem;
@@ -60,14 +65,24 @@
 }
 
 .func-div h3{
-    word-wrap:normal;
     font-family: 'ubuntu';
     font-weight: bolder;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: rgb(0, 201, 255);
     border-radius: 50%;
 }
 
 .func-div img{
-    width: 25%;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+height: 55px;
+width: 65px;
+}
+
+.img-border{
+    height: 70px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: #f6f6f6;
 }
