@@ -1,0 +1,33 @@
+.main-empresa{
+    background-color: white;
+    width: 100%;
+}
+
+.container-empresa{
+    display: none;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.img-empresa{
+    width: 70%;
+    height: 70%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-empresa img{
+    width: 25%;
+    height: 12%;
+    margin: 20px;
+}
+
+.text-empresa{
+    width: 55%;
+}

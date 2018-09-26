@@ -10,7 +10,7 @@ body {
     /* PESSOAS, AQUI ESTÁ A ALTURA DE CADA ELEMENTO EM ORDEM, OU SEJA, 
     O GRID-TEMPLATE-ROWS ESTÁ DIZENDO QUE O HEADER TEM 65VH, A NAV 0VH(É MELHOR PQ EU POSSO MODIFICAR)
     E ASSIM EM DIANTE... */
-    grid-template-rows:100vh 0vh 100vh 100vh 20vh;
+    grid-template-rows:100vh 0vh 100vh 100vh 10vh;
     
     /* GRID GAP CORRESPONDE AO ESPAÇO DE CADA ELEMENTO DA GRID */
     grid-gap: 1rem; 
@@ -64,7 +64,7 @@ body {
 @media screen and (max-width: 768px) {
     
     body{
-        grid-template-areas: "header" "nav" "main" "section"  "footer";
+        grid-template-areas: "header" "nav" "main" "section" "footer" ;
     }
     .main-content {flex-direction: column;
     }

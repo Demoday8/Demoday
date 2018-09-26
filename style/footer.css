@@ -1,0 +1,84 @@
+.main-footer{
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    background: url('../img/footer/home-repeat.png');
+    background-repeat: cover;
+}
+
+.main-footer img{
+    margin-top: 10px;
+    height: 65px;
+    width: 180px;
+    transition: .8s;
+}
+
+.main-footer img:hover{
+    transform: scale(1.15);
+}
+
+.footer-items {
+    margin-left: 230px;
+    font-family: 'ubuntu';
+}
+
+.footer-items a {
+    color: white;
+    transform: scale(1.2);
+    font-family: 'ubuntu';
+    font-weight: Bolder than 300;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 0px 18px;
+    box-sizing: border-box;
+    
+}
+
+.footer-items a:hover{
+    transform: scale(1.2);
+    color: rgb(204, 251, 0);
+}
+
+
+/* BOTAO ENVIAR */
+.icones-footer {
+    width: 15%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icones-footer i {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    height: 38px;
+    width: 38px;
+    border-radius: 100px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    transition: .2s ease;   
+}
+
+.icones-footer i:hover {
+    transition: .2s ease;
+    background-color:rgba(204, 251, 0, 0.7);
+    color: white;
+}
+
+#botao-footer{
+    width: 70px;
+    height: 70px;
+    background-color:rgba(204, 251, 0, 0.5);
+    border-radius: 50%;
+}
