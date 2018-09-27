@@ -4,79 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/header768.css">
-    <link rel="stylesheet" href="style/aside.css">
-    <link rel="stylesheet" href="style/como-func.css">
-    <link rel="stylesheet" href="style/depoimento.css">
-    <link rel="stylesheet" href="style/empresas.css">
+    <link rel="stylesheet" href="style/headerp.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/participe.css">
+    <link rel="stylesheet" href="style/contato.css">
     <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script defer src="script/header.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
     <link rel="shortcut icon" href="./img/logoJovem1.png">
-    <script defer src="script.js/script.js"> </script>    
-    <title>Jovem+ | Formação para Jovens</title>
+    <title>Jovem+ | Inscreva-se!</title>
 </head>
 <body>
-    
-    
-    <header class="main-header"> 
-        <!-- MENU AQUI -->
-        <nav class="main-nav">
-            <img id ="logo" src="img/jovem-mais-colorido.png" alt="Jovem Mais">
-            
-            <div class="nav-items"> 
-                
-                <a href="#"> Benefícios</a>
-                <a href="#"> Contato</a>
-                <a href="participe.html"> Inscreva-se</a>
-                <button id="btn-nav"> Entrar </button>
-                
-            </div>
-        </nav>
-        <!-- DIV PAI COM DISPLAY FLEX PARA ALINHAR OS ITENS DO HEADER -->
-        <div class="part-header-container">
-            <!-- ILUSTRAÇÃO/IMAGEM DO HEADER AQUI FRIENDS -->
-            <div class="part-imgHeader">
-                <img id = "formados" src="img/participe/formados.png" alt="Alunos">
-            </div> 
-            <!-- CHAMADA DE TEXTO DO HEADER  -->
-            <aside class="part-chamadaTexto">
-                
-                <h1>Seja um Jovem+ !</h1>
-                <p>Faça parte do nosso projeto e transforme a sua vida!  
-                    Adquire formação de qualidade dentro das nossa empresas parceira.
-                </p>
-                
-            </aside>
-        
+    <header>
+        <a href="index.html"><img src="img/jovem-mais-colorido.png" alt="Jovem Mais"></a>
+        <div class="hamburguer">
+            <span class="barrinha barra1"></span>
+            <span class="barrinha barra2"></span>
+            <span class="barrinha barra3"></span>
         </div>
+        <nav class="invisivel">
+            <a href="beneficios.html"> Benefícios</a>
+            <a href="contato.html"> Contato</a>
+            <a href="participe.html"> Inscreva-se</a>
+            <a href="login.html"><button> Entrar </button></a>
+        </nav>
     </header>
+    <!-- DIV PAI COM DISPLAY FLEX PARA ALINHAR OS ITENS DO HEADER -->
+    <div class="part-header-container">
+        <!-- ILUSTRAÇÃO/IMAGEM DO HEADER AQUI FRIENDS -->
+        <div class="part-imgHeader">
+            <img id = "formados" src="img/participe/formados.png" alt="Alunos">
+        </div> 
+        <!-- CHAMADA DE TEXTO DO HEADER  -->
+        <aside class="part-chamadaTexto">
+            
+            <h1>Seja um Jovem+ !</h1>
+            <p>Faça parte do nosso projeto e transforme a sua vida!  
+                Adquire formação de qualidade dentro das nossa empresas parceira.
+            </p>
+            
+        </aside>
+        
+    </div>
     <main class="main-section"> 
         
-            <!-- DIV PARA CENTRALIZAR TEXTOS -->
-            <div class="como-func">
-                <h2>Primeiros passos na vida profissional</h2>
-                <p>Faça cursos dentro das empresas com aulas dadas por seus próprios profissionais e conquiste um lugar ao sol no mercado de trabalho.</p>
+        <!-- DIV PARA CENTRALIZAR TEXTOS -->
+        <div class="como-func">
+            <h2>Primeiros passos na vida profissional</h2>
+            <p>Faça cursos dentro das empresas com aulas dadas por seus próprios profissionais e conquiste um lugar ao sol no mercado de trabalho.</p>
+        </div>
+        
+        <!-- DIV PARA CENTRALIZAR OS ICONES E SEUS TEXTOS -->
+        <div class="func-icones">
+            <div class="func-div">
+                <img src="img/participe/perfil-jovem.png" alt="Perfil do Jovem">
+                <h3>Perfil dos jovens</h3>
+                <p>Jovens de baixa renda, entre 16 a 22 anos, com renda per capita de até um salário mínimo.</p>
             </div>
-            
-            <!-- DIV PARA CENTRALIZAR OS ICONES E SEUS TEXTOS -->
-            <div class="func-icones">
-                <div class="func-div">
-                    <img src="img/participe/perfil-jovem.png" alt="Perfil do Jovem">
-                    <h3>Perfil dos jovens</h3>
-                    <p>Jovens de baixa renda, entre 16 a 22 anos, com renda per capita de até um salário mínimo.</p>
-                </div>
-                <div class="func-div">
-                    <img src="img/participe/processo-seletivo.png" alt="processo seletivo">
-                    <h3>Processo Seletivo</h3>
-                    <p>O jovem é encaminhado para um uma entrevista dentro da empresa que disponibiliza o curso desejado.</p>
-                </div>
-                <div class="func-div">
-                    <img src="img/participe/beneficio.png" alt="beneficios">
-                    <h3>Benefícios</h3>
-                    <p>Os cursos duram até de um ano e acompanham benefícios como alimentação, transporte e material escolar.</p> 
-                </div>
+            <div class="func-div">
+                <img src="img/participe/processo-seletivo.png" alt="processo seletivo">
+                <h3>Processo Seletivo</h3>
+                <p>O jovem é encaminhado para um uma entrevista dentro da empresa que disponibiliza o curso desejado.</p>
             </div>
-        </main>
+            <div class="func-div">
+                <img src="img/participe/beneficio.png" alt="beneficios">
+                <h3>Benefícios</h3>
+                <p>Os cursos duram até de um ano e acompanham benefícios como alimentação, transporte e material escolar.</p> 
+            </div>
+        </div>
+    </main>
+    <section class="formulario">
+        <div class="form-container">
+            <h2>Vamos começar!</h2>
+            <p>Preencha os campos abaixo para criar o seu 
+                perfil no <strong>Jovem+</strong></p>
+                <form action="#" method="post">
+                    <div class="form-box">
+                        <input name="nome" type="text" placeholder="Nome">
+                        <input name="email" type="email" placeholder="E-mail">
+                        <div class="form-box2">
+                            <input name="endereco" type="text" placeholder="Endereço">
+                            <input name="telefone" type="tel" placeholder="Telefone">
+                        </div> 
+                        <div class="form-box2">
+                            <input name="cidade" type="text" placeholder="Cidade">
+                            <input name="estado" type="text" placeholder="Estado">
+                        </div> 
+                        <div class="form-box3">
+                            <input name="dataDeNasc" type="date" placeholder="Data de Nascimento">
+                            <input name="rg" type="number" placeholder="RG">
+                            <input name="cpf" type="number" placeholder="CPF">
+                        </div>
+                        <div class="form-box3">
+                            <select name="renda">
+                                <option value="">Renda Familiar</option>
+                                <option value="salarioUmMenos">Menos de 1 salário mínimo</option>
+                                <option value="salarioUmDois">1 a 2 salários mínimos</option>
+                                <option value="salarioTresQuatro">3 a 4 salários mínimos</option>
+                                <option value="salarioCincoMais">5 ou mais salários mínimos</option>
+                            </select>
+                            <select name="escolaridade">
+                                <option value="">Escolaridade</option>
+                                <option value="medioCurs">Ensino Médio - Cursando</option>
+                                <option value="medioConc">Ensino Médio - Concluído</option>
+                                <option value="superiorCurs">Ensino Superior - Cursando</option>
+                            </select>
+                            <select name="instituicao">
+                                <option value="publica">Pública</option>
+                                <option value="privada">Privada</option>
+                            </select>
+                        </div>
+                        <div class="form-box2">
+                            <select name="cursos">
+                                <option value="">Curso desejado</option>
+                                <option value="assist-adm">Assistente Administrativo</option>
+                                <option value="contabilidade">Contabilidade Básica</option>
+                                <option value="rh">Gestão de Recursos Humanos</option>
+                                <option value="marketing">Marketing Básico</option>
+                                <option value="segur-trab">Segurança do Trabalho</option>
+                                <option value="front-end">Front-end</option>
+                                <option value="back-end">Back-end</option>
+                                <option value="secretariado">Secretariado</option>
+                            </select>
+                            <input name="senha" type="password" placeholder="Senha">
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <footer class="main-footer">
+                
+                <img src="img/footer/jovem-mais-branco.png" alt="Logo Jovem Mais">
+                <div class="icones-footer">
+                    
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    
+                </div>
+                <div class="footer-items"> 
+                    
+                    <a href="#"> Benefícios</a>
+                    <a href="#"> Contato</a>
+                    <a href="#"> Inscreva-se</a>
+                    
+                </div>
+                
+                <div id="botao-footer"></div>
+                
+            </footer> 
+        </body>
+        </html>

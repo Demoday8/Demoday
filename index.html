@@ -4,77 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/header768.css">
-    <link rel="stylesheet" href="style/aside.css">
-    <link rel="stylesheet" href="style/como-func.css">
-    <link rel="stylesheet" href="style/depoimento.css">
-    <link rel="stylesheet" href="style/empresas.css">
+    <link rel="stylesheet" href="style/headerp.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/contato.css">
     <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script defer src="script/header.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
     <link rel="shortcut icon" href="./img/logoJovem1.png">
-    <script defer src="script.js/script.js"> </script>    
-    <title>Jovem+ | Formação para Jovens</title>
+    <title>Jovem+ | Formação de Jovens</title>
 </head>
 <body>
-    
-    
-    <header class="main-header"> 
-        <!-- MENU AQUI -->
-        <nav class="main-nav">
-            
-            <div class="nav-items"> 
-                
-                
-                <img id ="logo" src="img/jovem-mais-colorido.png" alt="Jovem Mais">
-                
-                <div><a href="#"> Benefícios</a>
-                    <a href="#"> Contato</a>
-                    <a href="participe.html"> Inscreva-se</a>
-                    <button id="btn-nav"> Entrar </button>
-                </div>
-                
-                <div id="menu-hamburguer">
-                    <div class="barra"></div>
-                    <div class="barra"></div>
-                    <div class="barra"></div>
-                </div>
-            </div>
-        </nav>
-        
-        <!-- DIV PAI COM DISPLAY FLEX PARA ALINHAR OS ITENS DO HEADER -->
-        <div class="header-container"> 
-            <!-- CHAMADA DE TEXTO DO HEADER  -->
-            <aside class="chamadaTexto">
-                
-                <h1>Empresas protagonistas</h1>
-                <p>Na formação profissional de jovens carentes,
-                    proporcionando mais oportunidades no mercado de trabalho.
-                </p>
-                <div class="buttom-icones">
-                    <button>Como funciona</button>
-                    
-                    <!-- OS ICONES DO HEADER ESTAO AQUI AMIGOS -->
-                    <div class="icones-header">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                </div>
-                
-            </aside>
-            <!-- ILUSTRAÇÃO/IMAGEM DO HEADER AQUI FRIENDS -->
-            <div class="imgHeader">
-                <img src="img/home/alunos.png" alt="Alunos"> </div>
-            </div>
+    <header>
+        <a href="index.html"><img src="img/jovem-mais-colorido.png" alt="Jovem Mais"></a>
+        <div class="hamburguer">
+            <span class="barrinha barra1"></span>
+            <span class="barrinha barra2"></span>
+            <span class="barrinha barra3"></span>
         </div>
+        <nav class="invisivel">
+            <a href="beneficios.html"> Benefícios</a>
+            <a href="contato.html"> Contato</a>
+            <a href="participe.html"> Inscreva-se</a>
+            <a href="login.html"><button> Entrar </button></a>
+        </nav>
     </header>
+    
+    <!-- DIV PAI COM DISPLAY FLEX PARA ALINHAR OS ITENS DO HEADER -->
+    <div class="header-container"> 
+        <!-- CHAMADA DE TEXTO DO HEADER  -->
+        <aside class="chamadaTexto">
+            
+            <h1>Empresas protagonistas</h1>
+            <p>Na formação profissional de jovens carentes,
+                proporcionando mais oportunidades no mercado de trabalho.
+            </p>
+            <div class="buttom-icones">
+                <button>Como funciona</button>
+                
+                <!-- OS ICONES DO HEADER ESTAO AQUI AMIGOS -->
+                <div class="icones-header">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            
+        </aside>
+        <!-- ILUSTRAÇÃO/IMAGEM DO HEADER AQUI FRIENDS -->
+        <div class="imgHeader">
+            <img src="img/home/alunos.png" alt="Alunos"> </div>
+        </div>
+    </div>
+    
     
     <!-- AS DIVS FORAM APENAS PARA TESTAR A RESPONSIVIDADE DA GRID -->
     <main class="main-content"> 
-        
         
         <div class="box-text-pq">
             
@@ -88,136 +73,135 @@
         </div>
         <div class="box-pq-jovem"> 
             
-                <div class="box-incentivo">
-                    <p>Tenha o <span>Jovem+</span> na sua empresa</p>
-                    <button class="buttom-incentivo">Benefícios</button>
+            <div class="box-incentivo">
+                <p>Tenha o <span>Jovem+</span> na sua empresa</p>
+                <button class="buttom-incentivo">Benefícios</button>
+            </div>
+            
+            <div class="box-incentivo"> 
+                <p>Seja um <span>Jovem+</span> !</p>
+                <button class="buttom-incentivo">Participe!</button>
+            </div>
+        </div>
+    </main>
+    
+    <!-- SECTION: COMO FUNCIONA? DISPLAY FLEX E EM COLUNA-->
+    <section class="main-section"> 
+        
+        <!-- DIV PARA CENTRALIZAR TEXTOS -->
+        <div class="como-func">
+            <h2>Como funciona?</h2>
+            <p>A empresa faz um investimento direto no Jovem+, exercendo sua responsabilidade social, além de levar educação e cultura aos jovens de renda baixa.</p>
+        </div>
+        
+        <!-- DIV PARA CENTRALIZAR OS ICONES E SEUS TEXTOS -->
+        <div class="func-icones">
+            <div class="func-div">
+                <img src="img/home/formacao.png" alt="Formação">
+                <h3>Formação de qualidade</h3>
+                <p>Cursos de educação profissional para jovens de baixa renda com auxílio transporte.</p>
+            </div>
+            <div class="func-div">
+                <img src="img/home/voluntario.png" alt="voluntário">
+                <h3>Voluntariado</h3>
+                <p>Os educadores voluntários são os próprios funcionários das companhias parceiras.</p>
+            </div>
+            <div class="func-div">
+                <img src="img/home/modelo-social.png" alt="modelo social">
+                <h3>Modelo Social</h3>
+                <p>A empresa adota o Jovem+ por meio de uma franquia social, investindo diretamente no modelo social do projeto.</p> 
+            </div>
+        </div>
+    </section>
+    
+    <!-- <-----A TAG MAIN SERVE PARA DIZER O CONTEÚDO PRINCIPAL DO NOSSO SITE!        
+        PARA MANTER A SEMÂNTICA UTILIZAREI ELA AO INVÉS DE FICAR SÓ USANDO SECTIONS E DIV! -->
+        
+        <section class="main-depoimento">
+            <h2> Alguns Depoimentos:</h2>
+            <div class="bloco-depoimento">
+                <div class="depoimento">
+                    <h3>Adoro esse curso!</h3>
+                    <p>Estou fazendo o curso de assistente administrativo e estou adorando tudo! Os professores são ótimos, dispõem de suas horas de trabalho para voluntariar. Parabéns!!!</p>
+                    <div class="perfil-depoimento">
+                        <div class="img-depoi">
+                            <img src="img/Depoimentos/Renan.jpg" alt="Renan">   
+                        </div>
+                        <div class="perfil">
+                            <h4>Renan</h4>
+                            <p>Aluno - <span>Administrativo</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoimento">
+                    <h3>Ótima experiência!</h3>
+                    <p>Adoro participar desse projeto e dedicar o meu tempo ensinando e encaminhando jovens para um futuro melhor!</p>
+                    <div class="perfil-depoimento">
+                        <div class="img-depoi">
+                            <img src="img/Depoimentos/bruno.jpg" alt="Bruno">   
+                        </div>
+                        <div class="perfil">
+                            <h4>Bruno</h4>
+                            <p>Voluntário - <span>Mastertech</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="depoimento">
+                    <h3>Projeto maravilhoso!</h3>
+                    <p>Fico feliz em participar de um projeto incentivador, que apoia jovens engajados e dispostos a agarrar essa grande oportunidade! #Jovem+</p>
+                    <div class="perfil-depoimento">
+                        <div class="img-depoi">
+                            <img src="img/Depoimentos/giselle.jpg" alt="Giselle">   
+                        </div>
+                        <div class="perfil"> 
+                            <h4>Giselle</h4>
+                            <p>Voluntário - <span>Mastertech</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        </section>
+        
+        <!-- Section de divulgação das empresas parceiras -->
+        <section class="main-empresa">
+            <div class="container-empresa">
+                <div class="img-empresa">
+                    <img src="img/empresas/carrefour.png" alt="Carrefour">
+                    <img src="img/empresas/consultor.png" alt="consultor">
+                    <img src="img/empresas/google.png" alt="Google">
+                    <img src="img/empresas/mudara.png" alt="Mudara">
+                    <img src="img/empresas/mxr.png" alt="MXR">
+                    <img src="img/empresas/vivo.png" alt="Vivo">
                 </div>
                 
-                <div class="box-incentivo"> 
-                    <p>Seja um <span>Jovem+</span> !</p>
-                    <button class="buttom-incentivo">Participe!</button>
+                <div class="text-empresa">
+                    <h2>Empresas Parceiras</h2>
+                    <p>Com o intuito de promover cultura e novas oportunidades de trabalho para jovens, a Jovem+ recebe o apoio dessas grandes empresas!</p>
                 </div>
             </div>
-            
-</main>
-
-<!-- SECTION: COMO FUNCIONA? DISPLAY FLEX E EM COLUNA-->
-<section class="main-section"> 
-    
-    <!-- DIV PARA CENTRALIZAR TEXTOS -->
-    <div class="como-func">
-        <h2>Como funciona?</h2>
-        <p>A empresa faz um investimento direto no Jovem+, exercendo sua responsabilidade social, além de levar educação e cultura aos jovens de renda baixa.</p>
-    </div>
-    
-    <!-- DIV PARA CENTRALIZAR OS ICONES E SEUS TEXTOS -->
-    <div class="func-icones">
-        <div class="func-div">
-            <img src="img/home/formacao.png" alt="Formação">
-            <h3>Formação de qualidade</h3>
-            <p>Cursos de educação profissional para jovens de baixa renda com auxílio transporte.</p>
-        </div>
-        <div class="func-div">
-            <img src="img/home/voluntario.png" alt="voluntário">
-            <h3>Voluntariado</h3>
-            <p>Os educadores voluntários são os próprios funcionários das companhias parceiras.</p>
-        </div>
-        <div class="func-div">
-            <img src="img/home/modelo-social.png" alt="modelo social">
-            <h3>Modelo Social</h3>
-            <p>A empresa adota o Jovem+ por meio de uma franquia social, investindo diretamente no modelo social do projeto.</p> 
-        </div>
-    </div>
-</section>
-
-<!-- <-----A TAG MAIN SERVE PARA DIZER O CONTEÚDO PRINCIPAL DO NOSSO SITE!        
-    PARA MANTER A SEMÂNTICA UTILIZAREI ELA AO INVÉS DE FICAR SÓ USANDO SECTIONS E DIV! -->
-    
-    <section class="main-depoimento">
-        <h2> Alguns Depoimentos:</h2>
-        <div class="bloco-depoimento">
-            <div class="depoimento">
-                <h3>Adoro esse curso!</h3>
-                <p>Estou fazendo o curso de assistente administrativo e estou adorando tudo! Os professores são ótimos, dispõem de suas horas de trabalho para voluntariar. Parabéns!!!</p>
-                <div class="perfil-depoimento">
-                    <div class="img-depoi">
-                        <img src="img/Depoimentos/Renan.jpg" alt="Renan">   
-                    </div>
-                    <div class="perfil">
-                        <h4>Renan</h4>
-                        <p>Aluno - <span>Administrativo</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="depoimento">
-                <h3>Ótima experiência!</h3>
-                <p>Adoro participar desse projeto e dedicar o meu tempo ensinando e encaminhando jovens para um futuro melhor!</p>
-                <div class="perfil-depoimento">
-                    <div class="img-depoi">
-                        <img src="img/Depoimentos/bruno.jpg" alt="Bruno">   
-                    </div>
-                    <div class="perfil">
-                        <h4>Bruno</h4>
-                        <p>Voluntário - <span>Mastertech</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="depoimento">
-                <h3>Projeto maravilhoso!</h3>
-                <p>Fico feliz em participar de um projeto incentivador, que apoia jovens engajados e dispostos a agarrar essa grande oportunidade! #Jovem+</p>
-                <div class="perfil-depoimento">
-                    <div class="img-depoi">
-                        <img src="img/Depoimentos/giselle.jpg" alt="Giselle">   
-                    </div>
-                    <div class="perfil"> 
-                        <h4>Giselle</h4>
-                        <p>Voluntário - <span>Mastertech</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>     
-    </section>
-    
-    <!-- Section de divulgação das empresas parceiras -->
-    <section class="main-empresa">
-        <div class="container-empresa">
-            <div class="img-empresa">
-                <img src="img/empresas/carrefour.png" alt="Carrefour">
-                <img src="img/empresas/consultor.png" alt="consultor">
-                <img src="img/empresas/google.png" alt="Google">
-                <img src="img/empresas/mudara.png" alt="Mudara">
-                <img src="img/empresas/mxr.png" alt="MXR">
-                <img src="img/empresas/vivo.png" alt="Vivo">
-            </div>
-            
-            <div class="text-empresa">
-                <h2>Empresas Parceiras</h2>
-                <p>Com o intuito de promover cultura e novas oportunidades de trabalho para jovens, a Jovem+ recebe o apoio dessas grandes empresas!</p>
-            </div>
-        </div>
-    </section>
-    
-    <footer class="main-footer">
+        </section>
         
-        <img src="img/footer/jovem-mais-branco.png" alt="Logo Jovem Mais">
-        <div class="icones-footer">
+        <footer class="main-footer">
             
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
+            <img src="img/footer/jovem-mais-branco.png" alt="Logo Jovem Mais">
+            <div class="icones-footer">
+                
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                
+            </div>
+            <div class="footer-items"> 
+                
+                <a href="#"> Benefícios</a>
+                <a href="#"> Contato</a>
+                <a href="#"> Inscreva-se</a>
+                
+            </div>
             
-        </div>
-        <div class="footer-items"> 
+            <div id="botao-footer"></div>
             
-            <a href="#"> Benefícios</a>
-            <a href="#"> Contato</a>
-            <a href="#"> Inscreva-se</a>
-            
-        </div>
+        </footer> 
         
-        <div id="botao-footer"></div>
-        
-    </footer> 
-    
-</body>
-</html>
+    </body>
+    </html>

@@ -1,0 +1,522 @@
+/* SESSÃO 1 */
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.imgHeader img {
+    margin-left: 50px;
+    height: 78vh;
+    width: 47vw;
+}
+
+
+/* BOTAO SOCIAIS */
+.icones-header {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    color: rgb(0, 201, 255);
+}
+
+.icones-header i {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    height: 48px;
+    width: 48px;
+    border-radius: 100px;
+    border: 1px solid rgb(0, 201, 255);
+    cursor: pointer;
+    transition: .2s ease;   
+}
+
+.icones-header i:hover {
+    transition: .2s ease;
+    background-color:rgb(0, 201, 255);
+    color: white;
+}
+
+
+
+
+
+/* TEXTO CHAMADA */
+.chamadaTexto {
+    
+    color: rgb(0, 170, 212); /*Azul médio*/
+    margin: 0;
+    width: 400px;
+    height: 290px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.chamadaTexto h1 {
+    font-family: 'ubuntu';
+    font-weight: 650;
+    font-size: 4.5rem;
+    margin: 0;
+    
+}
+
+.chamadaTexto p {
+    margin-top: 20px;
+    width: 580px;
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: 300;
+    font-size: 1.7rem;
+    color: rgb(208, 206, 206);
+    
+}
+
+.buttom-icones button {
+    max-width: 250px;
+    min-width: 100%;
+    max-height: 75px;
+    min-height: 45px;
+    border: none;
+    border-radius: 100px;
+    border: 1px solid rgb(0, 201, 255);
+    color: rgb(208, 206, 206);
+    font-family: 'ubuntu';
+    font-size: 1.4rem;
+    background-color: white;
+    cursor: pointer;
+    padding: 25px 0;
+    font-weight: bolder than 300;
+    transition: 0.2s ease;
+}
+
+
+.buttom-icones button:hover {
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    transform: scale(1.1);
+    color: rgb(0, 201, 255);
+    
+    
+}
+
+.buttom-icones button:focus {
+    outline: none;
+}
+
+.buttom-icones{
+    width: 80%;
+} 
+
+
+
+/* 2 BOXES BRANCOS COM BOTAO */
+.main-content {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    flex-direction: column;
+    animation: cor 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+.box-pq-jovem{
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 55%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    
+}
+
+.box-text-pq{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center
+}
+
+@keyframes cor {
+    0%{background-color: rgb(0, 201, 255)}
+    30%{background-color: rgb(204,251,0)}
+    60%{background-color: rgb(0,170,212)}
+    100%{background-color: rgb(0, 201, 255)}
+}
+
+.box-incentivo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.4);
+    border-radius: 10px; 
+}
+
+
+.box-incentivo p{
+    margin: 10px;
+    width: 50%;
+    text-align: center;
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: 300;
+    font-size: 2rem;
+    color: rgb(208, 206, 206);
+}
+
+.box-incentivo span{
+    word-wrap:normal;
+    font-family: 'ubuntu';  
+    font-weight: bolder;
+    font-size: 2rem;
+    color: rgb(0, 201, 255);;
+}
+
+.buttom-incentivo {
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    border: 1px solid rgb(0, 201, 255);
+    color: rgb(208, 206, 206);
+    font-family: 'ubuntu';
+    font-size: 1.4rem;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bolder than 300;
+    
+}
+
+.buttom-incentivo:hover {
+    transition: 0.1s ease;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    transform: scale(1.1);
+    color: rgb(0, 201, 255);
+    
+}
+
+.buttom-incentivo:focus {
+    outline: none;
+}
+
+
+.text-pq h2{
+    font-family: 'ubuntu';
+    font-weight: 700;
+    font-size: 4.5rem;
+    margin: 0;
+    color: white;
+}
+
+
+.text-pq p{
+    margin-top: 20px;
+    width: 680px;
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: 300;
+    font-size: 1.7rem;
+    color:white;
+    text-align: justify;
+}
+
+.imgTextPq{
+    height: 50%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgTextPq img{
+    height: 90%;
+}
+
+
+/* BOTAO ENVIAR */
+.icones-header {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icones-header i {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    height: 48px;
+    width: 48px;
+    border-radius: 100px;
+    border: 1px solid rgb(0, 201, 255);
+    cursor: pointer;
+    transition: .2s ease;   
+}
+
+.icones-header i:hover {
+    transition: .2s ease;
+    background-color:rgb(0, 201, 255);
+    color: white;
+}
+
+
+
+/* SECTION: COMO FUNCIONA? */
+.main-section{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.como-func{
+    width: 70%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.como-func h2{
+    font-family: 'ubuntu';
+    font-weight: 650;
+    font-size: 3rem;
+    margin: 0;
+    color: rgb(0, 201, 255);;
+    text-align: center;
+} 
+
+.como-func p{
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: 300;
+    font-size: 1.7rem;
+    color:rgb(208, 206, 206);
+    text-align: center;
+}
+
+
+.func-icones{
+    margin: 40px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.func-div{
+    width: 28%;
+    text-align: center;
+}
+
+.func-div p{
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: 300;
+    font-size: 1.1rem;
+    color:rgb(175, 171, 171);
+    text-align: center;
+}
+
+.func-div h3{
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: rgb(0, 201, 255);
+    border-radius: 50%;
+}
+
+.func-div img{
+    width: 25%;
+}
+
+
+
+/* SECTION: DEPOIMENTOS */
+.main-depoimento{
+    padding: 100px;
+    height: 80vh;
+    background-color: rgba(208, 220, 230, 0.2);
+}
+
+
+.bloco-depoimento{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h2{
+    font-family: 'ubuntu';
+    font-weight: 550;
+    font-size: 4rem;
+    margin: 0;
+    color:rgb(0, 201, 255);
+    margin-left: 25px;
+}
+
+.main-depoimento h3{
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: black;
+    border-radius: 50%;
+    padding-bottom: 15px;
+    width: 80%;
+    margin: 0;
+}
+
+.main-depoimento p{
+    width: 80%;
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: 300;
+    font-size: 1.375rem;
+    color:rgb(175, 171, 171);
+}
+
+.depoimento{
+    bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    width: 27%;
+    background-color: white;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.4);
+    border-radius: 10px; 
+    margin: 0;
+    transition: .3s;
+}
+
+.depoimento:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+
+.perfil-depoimento{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.perfil-depoimento img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.perfil-depoimento p{
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 10px 0;
+}
+
+.perfil-depoimento h4{
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: black;
+    margin: 10px 0;
+}
+
+.perfil-depoimento span{
+    color: rgb(0, 201, 255);
+    font-weight: bold;
+}
+
+.img-depoi{
+    width: 30%;
+}
+
+.perfil{
+    width: 70%;
+}
+
+
+/* SECTION: EMPRESAS */
+.main-empresa{
+    background-color: white;
+    width: 100%;
+    height: 60vh;
+}
+
+.container-empresa{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.img-empresa{
+    width: 70%;
+    height: 70%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.img-empresa img{
+    width: 25%;
+    height: 12%;
+    margin: 20px;
+}
+
+.text-empresa{
+    width: 55%;
+}
+
+.text-empresa p{
+    margin-top: 20px;
+    width: 680px;
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: 300;
+    font-size: 1.7rem;
+    color:rgb(208, 206, 206);
+    text-align: justify;
+    margin-left: 25px;
+}
