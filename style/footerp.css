@@ -1,7 +1,3 @@
-body{
-    height: 200vh;
-}
-
 footer{
     height: 70px;
     width: 100%;
@@ -11,15 +7,15 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    z-index: 50;
+    /* position: fixed;
+    z-index: 50; */
 }
 
-footer:focus{
+/* footer:focus{
     display: none;
     visibility: none;
     opacity: 0;
-}
+} */
 
 footer>img{
     height:90px;
@@ -74,6 +70,10 @@ footer>img{
     background: radial-gradient(at bottom left,#F7D26F,#F77100,#E7006B,#9E2AB6,#4559CD);
     color: line;
     font-size: 30px;
+}
+
+.footer-links{
+    height: 70px;
 }
 
 .footer-links a{

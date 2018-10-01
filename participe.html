@@ -7,11 +7,9 @@
     <link rel="stylesheet" href="style/headerp.css">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/footerp.css">
-    <script defer src="script/footer.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
+    crossorigin="anonymous">
     <link rel="stylesheet" href="style/participe.css">
-    <link rel="stylesheet" href="style/contato.css">
     <script defer src="script/header.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
     <link rel="shortcut icon" href="./img/logoJovem1.png">
@@ -81,73 +79,74 @@
             <h2>Vamos começar!</h2>
             <p>Preencha os campos abaixo para criar o seu 
                 perfil no <strong>Jovem+</strong></p>
-        </div>
-        <div class="boxpp">
+            </div>
+            <div class="boxpp">
                 <form action="#" method="post">
                     
-                        
-                        <input name="nome" type="text" placeholder="Nome">
-                        <input name="email" type="email" placeholder="E-mail">
-                        
-                            <input name="endereco" type="text" placeholder="Endereço">
-                            <input name="telefone" type="tel" placeholder="Telefone">
-                        
-                            <input name="cidade" type="text" placeholder="Cidade">
-                            <input name="estado" type="text" placeholder="Estado">
-                        
-                            <input name="dataDeNasc" type="date" placeholder="Data de Nascimento">
-                            <input name="rg" type="number" placeholder="RG" maxlength="9">
-                            <input name="cpf" type="number" placeholder="CPF" maxlength="11">
-                       
-                        <div class="form-box3">
-                            <select name="renda">
-                                <option value="">Renda Familiar</option>
-                                <option value="salarioUmMenos">Menos de 1 salário mínimo</option>
-                                <option value="salarioUmDois">1 a 2 salários mínimos</option>
-                                <option value="salarioTresQuatro">3 a 4 salários mínimos</option>
-                                <option value="salarioCincoMais">5 ou mais salários mínimos</option>
-                            </select>
-                            <select name="escolaridade">
-                                <option value="">Escolaridade</option>
-                                <option value="medioCurs">Ensino Médio - Cursando</option>
-                                <option value="medioConc">Ensino Médio - Concluído</option>
-                                <option value="superiorCurs">Ensino Superior - Cursando</option>
-                            </select>
-                            <select name="instituicao">
-                                <option value="publica">Pública</option>
-                                <option value="privada">Privada</option>
-                            </select>
-                        </div>
-                        <div class="form-box2">
-                            <select  id="containPass"name="cursos">
-                                <option value="">Curso desejado</option>
-                                <option value="assist-adm">Assistente Administrativo</option>
-                                <option value="contabilidade">Contabilidade Básica</option>
-                                <option value="rh">Gestão de Recursos Humanos</option>
-                                <option value="marketing">Marketing Básico</option>
-                                <option value="segur-trab">Segurança do Trabalho</option>
-                                <option value="front-end">Front-end</option>
-                                <option value="back-end">Back-end</option>
-                                <option value="secretariado">Secretariado</option>
-                            </select>
-                            <input id="pass" name="senha" type="password" placeholder="Senha">
-                        </div>
+                    
+                    <input name="nome" type="text" placeholder="Nome">
+                    <input name="email" type="email" placeholder="E-mail">
+                    
+                    <input name="endereco" type="text" placeholder="Endereço">
+                    <input name="telefone" type="tel" placeholder="Telefone">
+                    
+                    <input name="cidade" type="text" placeholder="Cidade">
+                    <input name="estado" type="text" placeholder="Estado">
+                    
+                    <input name="dataDeNasc" type="date" placeholder="Data de Nascimento" id="dataNasc">
+                    <input name="rg" type="number" placeholder="RG" maxlength="9">
+                    <input name="cpf" type="number" placeholder="CPF" maxlength="11">
+                    
+                    <div class="form-box3">
+                        <select name="renda">
+                            <option value="">Renda Familiar</option>
+                            <option value="salarioUmMenos">Menos de 1 salário mínimo</option>
+                            <option value="salarioUmDois">1 a 2 salários mínimos</option>
+                            <option value="salarioTresQuatro">3 a 4 salários mínimos</option>
+                            <option value="salarioCincoMais">5 ou mais salários mínimos</option>
+                        </select>
+                        <select name="escolaridade">
+                            <option value="">Escolaridade</option>
+                            <option value="medioCurs">Ensino Médio - Cursando</option>
+                            <option value="medioConc">Ensino Médio - Concluído</option>
+                            <option value="superiorCurs">Ensino Superior - Cursando</option>
+                        </select>
+                        <select name="instituicao">
+                            <option value="publica">Pública</option>
+                            <option value="privada">Privada</option>
+                        </select>
+                    </div>
+                    <div class="form-box2">
+                        <select  id="containPass"name="cursos">
+                            <option value="">Curso desejado</option>
+                            <option value="assist-adm">Assistente Administrativo</option>
+                            <option value="contabilidade">Contabilidade Básica</option>
+                            <option value="rh">Gestão de Recursos Humanos</option>
+                            <option value="marketing">Marketing Básico</option>
+                            <option value="segur-trab">Segurança do Trabalho</option>
+                            <option value="front-end">Front-end</option>
+                            <option value="back-end">Back-end</option>
+                            <option value="secretariado">Secretariado</option>
+                        </select>
+                        <input id="pass" name="senha" type="password" placeholder=" Senha">
+                    </div>
+                    <button>Enviar</button>
                 </form>
             </div>
-            </section>
-            <footer>
-                <img src="img/footer/jovem-mais-branco.png" alt="Logo Jovem Mais">
+        </section>
+        <footer>
+            <img src="img/footer/jovem-mais-branco.png" alt="Logo Jovem Mais">
             <div class="icones-footer">
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-instagram"></i>
             </div>
             <nav class="footer-links">
-                    <a href="beneficios.html"> Benefícios</a>
-                    <a href="contato.html"> Contato</a>
-                    <a href="participe.html"> Inscreva-se</a>
+                <a href="beneficios.html"> Benefícios</a>
+                <a href="contato.html"> Contato</a>
+                <a href="participe.html"> Inscreva-se</a>
             </nav>
-                <div id="botao-footer"></div>
-            </footer>
-        </body>
-        </html>
+            <div id="botao-footer"></div>
+        </footer>
+    </body>
+    </html>
