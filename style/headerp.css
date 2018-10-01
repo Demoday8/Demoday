@@ -26,7 +26,7 @@ header img:hover{
     transform: scale(1.2);
 }   
 
-nav{
+header nav{
     display: flex;
     height: 100vh;
     display: flex;
@@ -35,7 +35,7 @@ nav{
     margin-right: 3vw;
 }
 
-nav a{
+header nav a{
     text-decoration: none;
     color: rgb(0, 113, 141);
     font-size: 1.2rem;
@@ -44,12 +44,12 @@ nav a{
     box-sizing: border-box;
 }
 
-nav a:hover{
+header nav a:hover{
     color: rgb(0, 201, 255);
 }
 
 
-nav button{
+header nav button{
     max-width: 300px;
     min-width: 120px;
     min-height: 30px;
@@ -67,7 +67,7 @@ nav button{
     outline: none;
 }
 
-nav button:hover{
+header nav button:hover{
     transform: scale(1.05);
     box-shadow: 0 0 25px rgba(0, 201, 255, 0.5);
     border: 1px solid rgb(0, 201, 255);
