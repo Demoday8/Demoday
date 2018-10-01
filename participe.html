@@ -11,6 +11,7 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="style/participe.css">
     <script defer src="script/header.js"></script>
+    <script defer src="script/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
     <link rel="shortcut icon" href="./img/logoJovem1.png">
     <title>Jovem+ | Inscreva-se!</title>
@@ -81,7 +82,7 @@
                 perfil no <strong>Jovem+</strong></p>
             </div>
             <div class="boxpp">
-                <form action="#" method="post">
+                <form action="#" id="signup" method="post">
                     
                     
                     <input name="nome" type="text" placeholder="Nome" autocomplete="off">
@@ -130,7 +131,7 @@
                         </select>
                         <input id="pass" name="senha" type="password" placeholder=" Senha">
                     </div>
-                    <button>Enviar</button>
+                    <button id="cadastro">Enviar</button>
                 </form>
             </div>
         </section>
