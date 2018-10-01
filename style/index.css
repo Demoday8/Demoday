@@ -49,6 +49,8 @@
 
 
 
+
+
 /* TEXTO CHAMADA */
 .chamadaTexto {
     
@@ -121,14 +123,13 @@
 /* 2 BOXES BRANCOS COM BOTAO */
 .main-content {
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: space-around;
     flex-direction: column;
     animation: cor 10s;
     animation-iteration-count: infinite;
-    
 }
 
 .box-pq-jovem{
@@ -157,7 +158,6 @@
     60%{background-color: rgb(0,170,212)}
     100%{background-color: rgb(0, 201, 255)}
 }
-
 .box-incentivo{
     
     display: flex;
@@ -252,46 +252,16 @@
 }
 
 
-/* BOTAO ENVIAR */
-.icones-header {
-    width: 100%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-
-.icones-header i {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
-    font-size: 18px;
-    height: 48px;
-    width: 48px;
-    border-radius: 100px;
-    border: 1px solid rgb(0, 201, 255);
-    cursor: pointer;
-    transition: .2s ease;   
-}
-
-.icones-header i:hover {
-    transition: .2s ease;
-    background-color:rgb(0, 201, 255);
-    color: white;
-}
 
 
 
 /* SECTION: COMO FUNCIONA? */
 .main-section{
     width: 100vw;
-    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: space-evenly;
+    align-items: center;
 }
 
 .como-func{
@@ -313,31 +283,36 @@
 } 
 
 .como-func p{
-    word-wrap:normal;
+    width: 100%;
     font-family: 'ubuntu';
     font-weight: 300;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     color:rgb(208, 206, 206);
     text-align: center;
 }
 
 
 .func-icones{
-    margin: 40px auto;
+
     width: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center; 
 }
 
 .func-div{
-    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    height: 200px;
     text-align: center;
 }
 
 .func-div p{
-    word-wrap:normal;
+
     font-family: 'ubuntu';
     font-weight: 300;
     font-size: 1.1rem;
@@ -346,26 +321,38 @@
 }
 
 .func-div h3{
-    word-wrap:normal;
     font-family: 'ubuntu';
     font-weight: bolder;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: rgb(0, 201, 255);
     border-radius: 50%;
 }
 
 .func-div img{
-    width: 25%;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+height: 55px;
+width: 65px;
+}
+
+.img-border{
+    height: 70px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: #f6f6f6;
 }
 
 
 
-/* SECTION: DEPOIMENTOS */
+
+/* DEPOIMENTO */
 .main-depoimento{
     padding: 100px;
-    height: 80vh;
-    background-color: rgba(208, 220, 230, 0.2);
+    background-color: #f1f1f1;
+
 }
+
 
 
 .bloco-depoimento{
@@ -373,7 +360,6 @@
     height: 80%;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
 }
 
@@ -386,19 +372,18 @@ h2{
     margin-left: 25px;
 }
 
-.main-depoimento h3{
+h3{
     word-wrap:normal;
     font-family: 'ubuntu';
     font-weight: 500;
     font-size: 1.8rem;
     color: black;
     border-radius: 50%;
-    padding-bottom: 15px;
     width: 80%;
     margin: 0;
 }
 
-.main-depoimento p{
+p{
     width: 80%;
     word-wrap:normal;
     font-family: 'ubuntu';
@@ -408,7 +393,6 @@ h2{
 }
 
 .depoimento{
-    bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -467,9 +451,11 @@ h2{
     width: 30%;
 }
 
-.perfil{
+#perfil{
     width: 70%;
 }
+
+
 
 
 /* SECTION: EMPRESAS */
@@ -520,3 +506,117 @@ h2{
     text-align: justify;
     margin-left: 25px;
 }
+
+
+
+
+
+
+    @media screen and (max-width: 568px) {
+
+        .header-container {
+            justify-content: space-between;
+        width: 100vw;
+        /* background-image: url(../img/home/alunos.png); */
+        background-image: url(../img/home/alunos.png);
+        background-color: rgba(0, 0, 0, 0.815);
+        background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: 110%;
+background-position-y: 50%;
+}
+        
+.buttom-icones > button{display: none;}
+        .imgHeader img {
+            margin-left: 50px;
+            height: 78vh;
+            width: 47vw;
+        }
+
+        .imgHeader{display: none;}
+        .chamadaTexto{margin-left: 20px; opacity: 1;} 
+        .chamadaTexto h1{
+        font-size: 3rem; 
+        }
+        
+        .chamadaTexto p {
+            font-size: 1.2rem;
+            word-break: break;
+            color: #fff;
+            width: 80%; 
+        }
+        .icones-header{align-content: flex-start; justify-content: flex-start;}
+        .icones-header i {margin: 10px;}
+        
+        .main-header {
+width: 100vw;            display: flex;
+            flex-direction: column;
+            margin: 0; 
+            padding: 0;  background-color: white;
+            height: 60vh;
+        }
+        
+
+    /* BOX BRANCA */
+    .box-text-pq{width: 100vw; display: flex;justify-content: space-around; align-items: center;}
+    .text-pq{
+        margin: 30px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center; 
+        align-items: center;;
+    }
+    .text-pq h2 {font-size: 2.4rem;}
+    .text-pq p{font-size: 1.2rem; word-wrap: break-word; text-align: center; width: 90%;}
+    .text-pq img{width: 50%;}
+    
+    .box-pq-jovem{flex-direction: column;}
+    .box-incentivo{ 
+        height: 280px;
+    margin: 10px;}
+        .box-incentivo > p > span {font-size: 1.3rem;}
+        .box-incentivo p {font-size: 1.2rem;}
+        .box-incentivo button {padding: 5px; height: 30%; width: 60%; font-size: 1.2rem}
+        .box-incentivo button:hover{transform: scale(1)}
+        /* COMO FUNCIONA */
+        .main-section { width: 100vw; background-color: beige}
+        .como-func{width: 90%; justify-content: space-around}
+        .como-func h2 {font-size: 2.2rem; margin: 10px}
+        .como-func p {font-size: 1.11rem;}
+        .func-icones{flex-direction: column; justify-content: space-around; }
+        .func-div{width: 100%;}
+        .func-div p {font-size: 1rem}
+        
+        
+        /* DEPOIMENTO */
+        .main-depoimento{ width: 100vw; display: flex;
+            justify-content: center;
+            align-items: center; padding: 0;}
+            .main-depoimento h2{font-size: 2.1rem;  margin: 10px;}
+            .bloco-depoimento {flex-direction: column}
+            .depoimento {width: 90%; height: 80%;; margin: 20px; box-sizing: border-box;}
+            .depoimento:hover{transform: scale(1)}
+            .depoimento h3{font-size: 1.3rem; margin: 5px;}
+            .perfil{font-size: 1.2rem;}
+            .img-depoi img{width: 48px; height: 48px;}
+            .depoimento p {font-size: 0.9rem; word-wrap: break-word; margin: 0; padding: 0;}
+            #perfil > h4, p, span {font-size: 1.2rem; margin: 0; padding: 0;
+            }
+            .perfil-depoimento span{font-size: 1.1rem;}
+
+            /* EMPRESAS */
+.text-empresa{width: 80vw;}
+.main-empresa{width: 100vw}
+            .container-empresa {
+                flex-direction: column;
+                width: 100%;
+                background-color: #f7f7f7;
+            }
+            .container-empresa h2 {
+                font-size: 2.4rem;
+            }
+            .container-empresa p {
+                font-size: 1.2rem;
+                width: 100%;
+            }
+        }

@@ -1,0 +1,89 @@
+body{
+    height: 200vh;
+}
+
+footer{
+    height: 70px;
+    width: 100%;
+    background-image: url('../img/footer/home-repeat.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 50;
+}
+
+footer:focus{
+    display: none;
+    visibility: none;
+    opacity: 0;
+}
+
+footer>img{
+    height:90px;
+    margin-right: 6px;
+    /* box-shadow: 0 0 30px black inset; */
+    /* border-radius: 50px; */
+    /* background-color: magenta; */
+}
+
+.icones-footer {
+    width: 20%;
+    margin: 0;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icones-footer i {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    height: 45px;
+    width: 45px;
+    border-radius: 100px;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    transition: .2s ease;   
+}
+
+.icones-footer i:nth-child(3){
+    font-size: 28px;
+}
+
+.icones-footer i:hover:nth-child(1) {
+    transition: .2s ease;
+    background-color:#345D99;
+    color: white;
+    font-size: 28px;
+}
+.icones-footer i:hover:nth-child(2) {
+    transition: .2s ease;
+    background-color:#00A3F3;
+    color: white;
+    font-size: 28px;
+}
+.icones-footer i:hover:nth-child(3) {
+    transition: .2s ease;
+    background: radial-gradient(at bottom left,#F7D26F,#F77100,#E7006B,#9E2AB6,#4559CD);
+    color: line;
+    font-size: 30px;
+}
+
+.footer-links a{
+    color: white;
+    transform: scale(1.2);
+    font-family: 'ubuntu';
+    font-weight: Bolder than 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0px 18px;
+    box-sizing: border-box;
+}
+
