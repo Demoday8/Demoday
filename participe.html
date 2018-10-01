@@ -81,23 +81,24 @@
             <h2>Vamos começar!</h2>
             <p>Preencha os campos abaixo para criar o seu 
                 perfil no <strong>Jovem+</strong></p>
+        </div>
+        <div class="boxpp">
                 <form action="#" method="post">
-                    <div class="form-box">
+                    
+                        
                         <input name="nome" type="text" placeholder="Nome">
                         <input name="email" type="email" placeholder="E-mail">
-                        <div class="form-box2">
+                        
                             <input name="endereco" type="text" placeholder="Endereço">
                             <input name="telefone" type="tel" placeholder="Telefone">
-                        </div> 
-                        <div class="form-box2">
+                        
                             <input name="cidade" type="text" placeholder="Cidade">
                             <input name="estado" type="text" placeholder="Estado">
-                        </div> 
-                        <div class="form-box3">
+                        
                             <input name="dataDeNasc" type="date" placeholder="Data de Nascimento">
-                            <input name="rg" type="number" placeholder="RG">
-                            <input name="cpf" type="number" placeholder="CPF">
-                        </div>
+                            <input name="rg" type="number" placeholder="RG" maxlength="9">
+                            <input name="cpf" type="number" placeholder="CPF" maxlength="11">
+                       
                         <div class="form-box3">
                             <select name="renda">
                                 <option value="">Renda Familiar</option>
@@ -118,7 +119,7 @@
                             </select>
                         </div>
                         <div class="form-box2">
-                            <select name="cursos">
+                            <select  id="containPass"name="cursos">
                                 <option value="">Curso desejado</option>
                                 <option value="assist-adm">Assistente Administrativo</option>
                                 <option value="contabilidade">Contabilidade Básica</option>
@@ -129,10 +130,10 @@
                                 <option value="back-end">Back-end</option>
                                 <option value="secretariado">Secretariado</option>
                             </select>
-                            <input name="senha" type="password" placeholder="Senha">
+                            <input id="pass" name="senha" type="password" placeholder="Senha">
                         </div>
-                    </div>
                 </form>
+            </div>
             </section>
             <footer>
                 <img src="img/footer/jovem-mais-branco.png" alt="Logo Jovem Mais">

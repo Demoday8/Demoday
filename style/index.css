@@ -241,8 +241,8 @@
 }
 
 .imgTextPq{
-    height: 50%;
-    width: 20%;
+    height: 40%;
+    width: 10%;
     display: flex;
     justify-content: center;
 }
@@ -293,7 +293,7 @@
 
 
 .func-icones{
-
+    
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -312,7 +312,7 @@
 }
 
 .func-div p{
-
+    
     font-family: 'ubuntu';
     font-weight: 300;
     font-size: 1.1rem;
@@ -332,8 +332,8 @@
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
-height: 55px;
-width: 65px;
+    height: 55px;
+    width: 65px;
 }
 
 .img-border{
@@ -350,7 +350,7 @@ width: 65px;
 .main-depoimento{
     padding: 100px;
     background-color: #f1f1f1;
-
+    
 }
 
 
@@ -428,9 +428,9 @@ p{
 }
 
 .perfil-depoimento p{
-        width: 100%;
-        font-size: 1.2rem;
-        margin: 10px 0;
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 10px 0;
 }
 
 .perfil-depoimento h4{
@@ -461,7 +461,7 @@ p{
 /* SECTION: EMPRESAS */
 .main-empresa{
     background-color: white;
-    width: 100%;
+    width: 100vw;
     height: 60vh;
 }
 
@@ -512,51 +512,51 @@ p{
 
 
 
-    @media screen and (max-width: 568px) {
-
-        .header-container {
-            justify-content: space-between;
+@media screen and (max-width: 568px) {
+    
+    .header-container {
+        justify-content: space-between;
         width: 100vw;
         /* background-image: url(../img/home/alunos.png); */
         background-image: url(../img/home/alunos.png);
         background-color: rgba(0, 0, 0, 0.815);
         background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-size: 110%;
-background-position-y: 50%;
-}
-        
-.buttom-icones > button{display: none;}
-        .imgHeader img {
-            margin-left: 50px;
-            height: 78vh;
-            width: 47vw;
-        }
-
-        .imgHeader{display: none;}
-        .chamadaTexto{margin-left: 20px; opacity: 1;} 
-        .chamadaTexto h1{
+        background-repeat: no-repeat;
+        background-size: 110%;
+        background-position-y: 50%;
+    }
+    
+    .buttom-icones > button{display: none;}
+    .imgHeader img {
+        margin-left: 50px;
+        height: 78vh;
+        width: 47vw;
+    }
+    
+    .imgHeader{display: none;}
+    .chamadaTexto{margin-left: 20px; opacity: 1;} 
+    .chamadaTexto h1{
         font-size: 3rem; 
-        }
-        
-        .chamadaTexto p {
-            font-size: 1.2rem;
-            word-break: break;
-            color: #fff;
-            width: 80%; 
-        }
-        .icones-header{align-content: flex-start; justify-content: flex-start;}
-        .icones-header i {margin: 10px;}
-        
-        .main-header {
-width: 100vw;            display: flex;
-            flex-direction: column;
-            margin: 0; 
-            padding: 0;  background-color: white;
-            height: 60vh;
-        }
-        
-
+    }
+    
+    .chamadaTexto p {
+        font-size: 1.2rem;
+        word-break: break;
+        color: #fff;
+        width: 80%; 
+    }
+    .icones-header{align-content: flex-start; justify-content: flex-start;}
+    .icones-header i {margin: 10px;}
+    
+    .main-header {
+        width: 100vw;            display: flex;
+        flex-direction: column;
+        margin: 0; 
+        padding: 0;  background-color: white;
+        height: 60vh;
+    }
+    
+    
     /* BOX BRANCA */
     .box-text-pq{width: 100vw; display: flex;justify-content: space-around; align-items: center;}
     .text-pq{
@@ -573,7 +573,7 @@ width: 100vw;            display: flex;
     .box-pq-jovem{flex-direction: column;}
     .box-incentivo{ 
         height: 280px;
-    margin: 10px;}
+        margin: 10px;}
         .box-incentivo > p > span {font-size: 1.3rem;}
         .box-incentivo p {font-size: 1.2rem;}
         .box-incentivo button {padding: 5px; height: 30%; width: 60%; font-size: 1.2rem}
@@ -603,10 +603,10 @@ width: 100vw;            display: flex;
             #perfil > h4, p, span {font-size: 1.2rem; margin: 0; padding: 0;
             }
             .perfil-depoimento span{font-size: 1.1rem;}
-
+            
             /* EMPRESAS */
-.text-empresa{width: 80vw;}
-.main-empresa{width: 100vw}
+            .text-empresa{width: 80vw;}
+            .main-empresa{width: 100vw}
             .container-empresa {
                 flex-direction: column;
                 width: 100%;

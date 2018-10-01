@@ -14,8 +14,6 @@ menu.onclick = function(){
     xis3.classList.toggle('barrinha2');
 }
 
-
-
 function sumirHeader(){
     if(scrollY  === body.scrollHeight - innerHeight){
         header.style.display = 'none';
