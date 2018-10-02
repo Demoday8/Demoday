@@ -123,6 +123,10 @@ header nav button:hover{
     header img{
         height: 28px;
     }
+
+    header nav a{
+        color: black;
+    }
     
     .invisivel{
         position: absolute;
@@ -133,7 +137,7 @@ header nav button:hover{
         flex-direction: column;
         transition: 1s;
         border-bottom: 1px solid rgba(0,0,0,0.5);
-        animation: animar 5s infinite;
+        animation: colorir 5s infinite;
     }
 
     .mostrando{
@@ -150,13 +154,12 @@ header nav button:hover{
         color: black;
     }
 
-    nav button{
+    header nav button{
         color: black;
         text-align: center;
         background-color: transparent;
         height: 0;
         font-family: 'ubuntu';
-        font-size: 1.8rem;
         text-align: center;
         cursor: pointer;
         outline: none;
@@ -179,7 +182,7 @@ header nav button:hover{
     }
 }
 
-@keyframes animar{
+@keyframes colorir{
     0%{
         background: rgb(0, 201, 255)
     }
