@@ -33,6 +33,7 @@ footer img:hover{
     justify-content: space-between;
     align-items: center;
 }
+.icones-footer h4{ color: white; font-size: 1.15rem;}
 
 .icones-footer i {
     display: flex;
@@ -46,28 +47,29 @@ footer img:hover{
     border: 1px solid white;
     color: white;
     cursor: pointer;
-    transition: .2s ease;   
+    transition: .2s ease; 
 }
 
-.icones-footer i:nth-child(3){
+.icones-footer i:nth-child(4){
     font-size: 28px;
 }
 
-.icones-footer i:hover:nth-child(1) {
+.icones-footer i:hover:nth-child(2) {
     transition: .2s ease;
     background-color:#345D99;
     color: white;
     font-size: 28px;
 }
-.icones-footer i:hover:nth-child(2) {
+.icones-footer i:hover:nth-child(3) {
     transition: .2s ease;
     background-color:#00A3F3;
     color: white;
     font-size: 28px;
 }
-.icones-footer i:hover:nth-child(3) {
+.icones-footer i:hover:nth-child(4) {
     transition: .2s ease;
-    background: radial-gradient(at bottom left,#F7D26F,#F77100,#E7006B,#9E2AB6,#4559CD);
+    background: radial-gradient(at bottom left,#F7D26F,#F77100,#E7006B,#9E2AB6,
+    #4559CD);
     color: line;
     font-size: 30px;
 }
@@ -97,38 +99,31 @@ footer img:hover{
 }
 
 @media screen and (max-width: 568px) {
-    footer{height: 20vh; display: flex; flex-direction: column; flex-wrap: wrap; }
- 
-    footer>a{
-        margin-left: 3vw;
-        display: flex;
-        
+    footer{
+        height: 10vh; 
+        width: 100vw; 
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: space-around;
     }
-    
     footer img{
         height:60px;
         width: 125px;
         margin-top: 5px;
         transition: .8s;
     }
-
-    footer nav{
-        display: flex;
-        flex-direction: column;
-        margin: 50px 0;
-    }
     
     footer img:hover{transform: none;}
-    
     .icones-footer {
-        width: 30%;
+        width: 50%;
         margin: 0;
         height: 50%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    
+    .icones-footer h4{ color: white; font-size: 1rem;}
     .icones-footer i {
         display: flex;
         margin: 0;
@@ -142,15 +137,10 @@ footer img:hover{
         border:none;
         color: white;
         cursor: pointer;
-        transition: .2s ease;   
+        transition: .2s ease; 
+    }
+    .footer-links{
+        display: none;
     }
     
-    .footer-links{
-        justify-content: flex-start;
-        display: flex;
-    }
-    .footer-links a{
-        font-size: 0.9rem;
-        text-align: justify;
-    }
 }

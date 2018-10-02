@@ -9,8 +9,8 @@
 
 .imgHeader img {
     margin-left: 50px;
-    height: 78vh;
-    width: 47vw;
+    height: 670px;
+    width: 720px;
 }
 
 
@@ -577,90 +577,95 @@ p{
     .box-incentivo{ 
         width: 75%;
         height: 250px;
-        margin: 10px;}
-        .box-incentivo > p > span {font-size: 1.2rem;}
-        .box-incentivo p {font-size: 1.1rem; width: 70%; margin: 3px;}
-        .box-incentivo button {padding: 10px 40px; height: 30%; width: 100%; font-size: 1rem}
-        .box-incentivo button:hover{transform: scale(1)}
-        /* COMO FUNCIONA */
-        .main-section { width: 100vw; background-color: beige}
-        .como-func{width: 90%; justify-content: space-around}
-        .como-func h2 {font-size: 1.7rem; margin: 10px}
-        .como-func p {font-size: 1.11rem;}
-        .func-icones{flex-direction: column; justify-content: space-around; }
-        .func-div{width: 100%;}
-        .func-div p {font-size: 1rem}
-        
-        
-        /* DEPOIMENTO */
-        .main-depoimento{ width: 100vw; display: flex;
-            justify-content: center;
-            align-items: center; padding: 0;
-        flex-direction: column;}
-            .main-depoimento h2{font-size: 1.7rem;  margin: 10px; text-align: center;} 
-            .bloco-depoimento {flex-direction: column}
-            .depoimento {width: 90%; height: 80%;; margin: 20px; box-sizing: border-box;}
-            .depoimento:hover{transform: scale(1)}
-            .depoimento h3{font-size: 1.2rem; margin-right: 10px; margin-top: 10px;}
-            .perfil{font-size: 1rem;}
-            .img-depoi img{width: 40px; height: 40px;}
-            .img-depoi{ width: 20%; height: 42px; display: flex; align-items: center; justify-content: center; }
-            .depoimento p {font-size: 0.9rem; word-wrap: break-word; margin: 0; padding: 0;}
-            #perfil > h4, p, span {font-size: 1rem; margin: 0; padding: 0;
-            }
-            .perfil-depoimento{display: flex; align-items: center; justify-content: space-between;}
-            .perfil-depoimento span{font-size: 1rem;}
-            .perfil h4{ font-size: 1.05rem;; margin: 0;}
-            .perfil{width: 70%; margin: 10px 0;}
-            .depoimento:hover{
-                transform: none;
-                box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
-            }
-            
-            /* EMPRESAS */
-            .text-empresa{
-                width: 95%;
-                height: 60%;
-                word-wrap: break-word;
-                margin: 0;
-                padding: 0;
-                text-align: center;
-            }
-            
-            .text-empresa h2{
-                text-align: center;
-                font-size: 1.7rem;
-                margin: 5px;
-            }
-            .container-empresa {
-                flex-direction: column;
-            }
-            
-            .container-empresa p {
-                font-size: 1.2rem;
-                width: 86%;
-            }
-            
-            /* SECTION: EMPRESAS */
-            .main-empresa{
-                background-color: white;
-                width: 100vw;
-                height: 60vh;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                flex-direction: column;
-            }
-            .text-empresa{
-                margin: 20px 0px;
-                flex-direction: column;
-                display: flex;
-                justify-content: center; 
-                align-items: center;
-            }
-            .text-empresa P{
-                width: 90%;
-                margin: 0;
-                text-align: center;
-            }
-        }
+        margin: 10px;
+    }
+    .box-incentivo > p > span {font-size: 1.2rem;}
+    .box-incentivo p {font-size: 1.1rem; width: 70%; margin: 3px;}
+    .box-incentivo button {padding: 10px 40px; height: 30%; width: 100%; font-size: 1rem}
+    .box-incentivo button:hover{transform: scale(1)}
+    /* COMO FUNCIONA */
+    .main-section { width: 100vw; background-color: beige}
+    .como-func{width: 90%; justify-content: space-around}
+    .como-func h2 {font-size: 1.7rem; margin: 10px}
+    .como-func p {font-size: 1.11rem;}
+    .func-icones{flex-direction: column; justify-content: space-around; }
+    .func-div{width: 100%;}
+    .func-div p {font-size: 1rem}
+    
+    
+    /* DEPOIMENTO */
+    .main-depoimento{ 
+        width: 100vw; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        padding: 0;
+        flex-direction: column;
+    }
+    .main-depoimento h2{font-size: 1.7rem;  margin: 10px; text-align: center;} 
+    .bloco-depoimento {flex-direction: column}
+    .depoimento {width: 90%; height: 80%;; margin: 20px; box-sizing: border-box;}
+    .depoimento:hover{transform: scale(1)}
+    .depoimento h3{font-size: 1.2rem; margin-right: 10px; margin-top: 10px;}
+    .perfil{font-size: 1rem;}
+    .img-depoi img{width: 40px; height: 40px;}
+    .img-depoi{ width: 20%; height: 42px; display: flex; align-items: center; justify-content: center; }
+    .depoimento p {font-size: 0.9rem; word-wrap: break-word; margin: 0; padding: 0;}
+    #perfil > h4, p, span {font-size: 1rem; margin: 0; padding: 0;
+    }
+    .perfil-depoimento{display: flex; align-items: center; justify-content: space-between;}
+    .perfil-depoimento span{font-size: 1rem;}
+    .perfil h4{ font-size: 1.05rem;; margin: 0;}
+    .perfil{width: 70%; margin: 10px 0;}
+    .depoimento:hover{
+        transform: none;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    }
+    
+    /* EMPRESAS */
+    .text-empresa{
+        width: 95%;
+        height: 60%;
+        word-wrap: break-word;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .text-empresa h2{
+        text-align: center;
+        font-size: 1.7rem;
+        margin: 5px;
+    }
+    .container-empresa {
+        flex-direction: column;
+    }
+    
+    .container-empresa p {
+        font-size: 1.2rem;
+        width: 86%;
+    }
+    
+    /* SECTION: EMPRESAS */
+    .main-empresa{
+        background-color: white;
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .text-empresa{
+        margin: 20px 0px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+    .text-empresa P{
+        width: 90%;
+        margin: 0;
+        text-align: center;
+    }
+}
