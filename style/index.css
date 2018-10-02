@@ -463,6 +463,7 @@ p{
     background-color: white;
     width: 100vw;
     height: 60vh;
+
 }
 
 .container-empresa{
@@ -560,7 +561,7 @@ p{
     /* BOX BRANCA */
     .box-text-pq{width: 100vw; display: flex;justify-content: space-around; align-items: center;}
     .text-pq{
-        margin: 30px;
+        margin: 20px 0px;
         flex-direction: column;
         display: flex;
         justify-content: center; 
@@ -572,11 +573,12 @@ p{
     
     .box-pq-jovem{flex-direction: column;}
     .box-incentivo{ 
+        width: 75%;
         height: 280px;
         margin: 10px;}
         .box-incentivo > p > span {font-size: 1.3rem;}
         .box-incentivo p {font-size: 1.2rem;}
-        .box-incentivo button {padding: 5px; height: 30%; width: 60%; font-size: 1.2rem}
+        .box-incentivo button {padding: 2px; height: 30%; width: 60%; font-size: 1rem}
         .box-incentivo button:hover{transform: scale(1)}
         /* COMO FUNCIONA */
         .main-section { width: 100vw; background-color: beige}
@@ -592,7 +594,7 @@ p{
         .main-depoimento{ width: 100vw; display: flex;
             justify-content: center;
             align-items: center; padding: 0;}
-            .main-depoimento h2{font-size: 2.1rem;  margin: 10px;}
+            .main-depoimento h2{font-size: 1.7rem;  margin: 10px; text-align: center;} 
             .bloco-depoimento {flex-direction: column}
             .depoimento {width: 90%; height: 80%;; margin: 20px; box-sizing: border-box;}
             .depoimento:hover{transform: scale(1)}
@@ -605,18 +607,41 @@ p{
             .perfil-depoimento span{font-size: 1.1rem;}
             
             /* EMPRESAS */
-            .text-empresa{width: 80vw;}
-            .main-empresa{width: 100vw}
-            .container-empresa {
-                flex-direction: column;
-                width: 100%;
-                background-color: #f7f7f7;
+       .text-empresa{
+           width: 95%;
+           height: 60%;
+           word-wrap: break-word;
+           margin: 0;
+           padding: 0;
+           text-align: center;
+       }
+
+       .text-empresa h2{
+           text-align: center;
+           font-size: 1.7rem;
+        margin: 5px;
+           }
+                .container-empresa {
+                    flex-direction: column;
+                          }
+            
+                .container-empresa p {
+                    font-size: 1.2rem;
+                    width: 86%;
+                }
+
+                /* SECTION: EMPRESAS */
+.main-empresa{
+    background-color: white;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+       footer{
+           position: absolute;
+       }
             }
-            .container-empresa h2 {
-                font-size: 2.4rem;
-            }
-            .container-empresa p {
-                font-size: 1.2rem;
-                width: 100%;
-            }
-        }
