@@ -267,3 +267,102 @@ form{
     justify-content: space-between;
     
 }
+
+@media screen and (max-width:568px){
+    .part-header-container {
+        height: 75vh;
+        background: url(../img/participe/formados.png);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position-y: 70%;
+        background-color: rgba(0, 0, 0, 0.918);
+        background-blend-mode: multiply;
+    }
+
+    .part-imgHeader{
+        display: none;
+    }
+    .part-chamadaTexto h1{
+        font-size: 3.2rem;
+        word-wrap: break-word;
+    }
+    .part-chamadaTexto p {
+     font-size: 1.2rem;
+     word-wrap: break-word;
+     width: 80%;
+    }
+    .part-chamadaTexto {
+        width: 90%;
+
+    }
+
+    .main-section {
+        border: none;
+        box-shadow: 0px 0px 0px;
+        width: 100%;
+height: auto;
+    }
+
+    .como-func {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .como-func h2 {
+        font-size: 2rem;
+        margin: 5px;
+    }
+
+    .como-func p {
+        font-size: 1.1rem;
+    }
+
+    .func-icones {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid red;
+    }
+
+.func-div {
+    width: 90%;
+    height: 200px;
+margin: 20px;
+display:flex;
+justify-content: space-around;
+flex-direction: column;
+align-items: center;}
+
+.func-icones p {
+    font-size: 1.1rem;
+}
+
+.func-icones img {
+    width: 80px;
+    height: 80px;
+}
+
+.form-container {
+    width: 100vw;
+    align-items: center;
+}
+
+.form-container h2 {
+    font-size: 2.2rem;
+    margin: 5px;
+}
+.form-container p {
+    width: 80%;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 5px;
+}
+.boxpp{
+    width: 100vw;
+}
+form {
+    width: 85%;
+}
+
+}

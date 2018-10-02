@@ -595,7 +595,8 @@ p{
         /* DEPOIMENTO */
         .main-depoimento{ width: 100vw; display: flex;
             justify-content: center;
-            align-items: center; padding: 0;}
+            align-items: center; padding: 0;
+        flex-direction: column;}
             .main-depoimento h2{font-size: 1.7rem;  margin: 10px; text-align: center;} 
             .bloco-depoimento {flex-direction: column}
             .depoimento {width: 90%; height: 80%;; margin: 20px; box-sizing: border-box;}
