@@ -1,0 +1,193 @@
+.main-contato {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    animation: cor 10s;
+    animation-iteration-count: infinite;
+}
+
+.main-contato img{
+    width: 350px;
+    height: 250px;
+}
+
+.text-contato{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    margin: 50px;
+}
+
+.text-contato p{
+    margin-top: 20px;
+    width: 650px;
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: 300;
+    font-size: 1.7rem;
+    color:white;
+
+}
+
+.text-contato h1{
+    font-family: 'ubuntu';
+    font-weight: 650;
+    font-size: 4.5rem;
+    margin: 0;
+    color: white;
+}
+
+ @keyframes cor {
+    0%{background-color: rgb(0, 201, 255)}
+    30%{background-color: rgb(204,251,0)}
+    60%{background-color: rgb(0,170,212)}
+    100%{background-color: rgb(0, 201, 255)}
+}
+
+.formulario{
+    margin: 0 auto;
+    width: 100%;
+    height: 90vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.formulario button{
+    background-color: rgb(0, 170, 212);
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    max-width: 300px;
+    min-width: 120px;
+    min-height: 30px;
+    max-height: 45px;
+    padding: 8px 50px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'ubuntu';
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    margin: 30px 0;
+    transition: 0.5s;
+}
+
+.formulario button:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+
+.form-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 65%;
+    
+}
+
+
+.form-container p{
+    word-wrap:normal;
+    font-family: 'ubuntu';
+    font-weight: 300;
+    font-size: 1.7rem;
+    color:rgb(208, 206, 206);
+    text-align: left;
+    width: 40%;
+}
+
+.boxpp{
+    width: 65%;
+    height: 500px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.boxpp input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(0, 201, 255);
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: start;
+    
+}
+
+.boxpp textarea{
+    width: 100%;
+    height: 200px;
+    border: 2px solid rgb(0, 201, 255);
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: start;
+    padding: 5px;
+}
+
+::-webkit-input-placeholder{
+    color: rgb(0, 201, 255);
+}
+
+.boxpp select{
+    width: 32%;
+    height: 40px;
+    color: rgb(0, 201, 255);
+    border: 2px solid rgb(0, 201, 255);
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+
+
+@media screen and (max-width: 568px) {
+    .main-contato {
+        width: 100vw;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        align-items: space-around;
+        flex-direction: column-reverse;
+        animation: cor 10s;
+        animation-iteration-count: infinite;
+    }
+    .main-contato img{
+        width: 200px;
+        height: 120px;
+    }
+    
+    /* .text-contato{width: 100vw; display: flex;justify-content: space-around; align-items: center;} */
+    .text-contato{
+        margin: 20px 0px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+    .text-contato h1 {font-size: 1.7rem; text-align: center; width: 320px;}
+    .text-contato p{font-size: 1.2rem; text-align: center; width: 320px; }
+
+}
