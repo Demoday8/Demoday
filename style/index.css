@@ -577,7 +577,7 @@ p{
         height: 280px;
         margin: 10px;}
         .box-incentivo > p > span {font-size: 1.3rem;}
-        .box-incentivo p {font-size: 1.2rem;}
+        .box-incentivo p {font-size: 1.2rem; width: 60%;}
         .box-incentivo button {padding: 2px; height: 30%; width: 60%; font-size: 1rem}
         .box-incentivo button:hover{transform: scale(1)}
         /* COMO FUNCIONA */
