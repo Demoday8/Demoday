@@ -461,36 +461,65 @@ p{
 /* SECTION: EMPRESAS */
 .main-empresa{
     background-color: white;
-    width: 100vw;
     height: 60vh;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .container-empresa{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items: center;
     flex-direction: row;
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .img-empresa{
-    width: 70%;
-    height: 70%;
-    flex-wrap: wrap;
+    width: 60%;
+    height: 300px;
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    margin-right: 80px;
+    padding: 0;
 }
 
-.img-empresa img{
-    width: 25%;
-    height: 12%;
+.img-box img{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    animation: animar 15s linear infinite;
+}
+
+.img-box > img {
+    width: 300px;
     margin: 20px;
 }
+
+@keyframes animar {
+        /* ELE INICIA COM A NOSSA LOGO DO MEIO ( MUDARA)  */
+   0%{transform: translateX(0%);}
+   /* DAI EU DISSE, CARA VAI AI PRA DIREITA (-276%) */
+
+   25%{margin-left: -276%}
+      /* DPS EU DISSE, VOLTA AQUI PRO ESTADO INICIAL BRO (0%) */
+
+   50%{margin-left: 0%;}
+      /* AGORA PF VAI PRA +276% PRA MIM (DISTANCIA DA LOGO MUDARA ATÉ CARREFOUR) */
+   75%{margin-left: 276%;}
+      /* DAI EU FALEI, BRO, VALEU AGORA VOLTA PRO SEU ESTADO INICIAL */
+
+   100%{margin-left:0%;}
+}
+
 
 .text-empresa{
     width: 55%;
@@ -507,7 +536,6 @@ p{
     text-align: justify;
     margin-left: 25px;
 }
-
 
 
 
@@ -662,5 +690,12 @@ p{
                 width: 90%;
                 margin: 0;
                 text-align: center;
+            }
+            .img-empresa{
+                width: 80%;
+                margin: 0;            
+            }
+            .img-box img {
+               width: 130px;
             }
         }
