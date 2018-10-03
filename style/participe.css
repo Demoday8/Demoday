@@ -204,6 +204,7 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 
@@ -374,6 +375,7 @@ form{
     margin: 5px;
 }
 .boxpp{
+    background-color: white;
     width: 100vw;
 }
 form {
