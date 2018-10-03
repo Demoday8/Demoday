@@ -148,6 +148,7 @@ form{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    background-color: white;
 }
 
 .formulario button{
@@ -377,6 +378,8 @@ form{
 }
 form {
     width: 85%;
+    z-index: 51;
+    position: absolute;
 }
 
 }

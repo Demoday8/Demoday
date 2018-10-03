@@ -1,3 +1,4 @@
+
 document.querySelector('.enviar-cadastro').addEventListener('click', Cadastrar);
 
 
