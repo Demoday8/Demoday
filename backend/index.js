@@ -19,9 +19,6 @@ app.get('/usuarios', (req, res) => {
 })
 
 app.post('/usuario/novo', (req, res) => {
-    if (!req.body.nome || !req.body.email || !req.body.senha) {
-        return res.status(400).send({ erro: "Parâmetros obrigatórios ausentes" });
-    }
 
     req.db.collection('usuarios').insert(req.body, erro => {
         if (!erro) {
