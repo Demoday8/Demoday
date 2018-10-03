@@ -380,6 +380,7 @@ form {
     width: 85%;
     z-index: 51;
     position: absolute;
+    z-index: -1;
 }
 
 }
