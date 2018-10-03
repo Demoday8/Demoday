@@ -1,0 +1,19 @@
+{
+  "name": "jovem-mais",
+  "version": "1.0.0",
+  "description": "Frontend para o projeto do Demoday 8 - Jovem+",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Demoday8/Demoday.git"
+  },
+  "author": "Grupo Jovem+",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Demoday8/Demoday/issues"
+  },
+  "homepage": "https://github.com/Demoday8/Demoday#readme"
+}

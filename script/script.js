@@ -1,39 +1,29 @@
-/* var url = '';
-var data = {nome: '',email:'',endereco:'',telefone:'',cidade:'',estado:'',nascimento:'',identidade:'',cpf:'',rendaFamiliar:'',escolaridade:'',tipoEducacao:'',cursoDesejado:'',senha:''};
+document.querySelector('.enviar-cadastro').addEventListener('click', Cadastrar);
 
- */
-let cadastro = document.querySelectorAll('#cadastro');
 
-cadastro.onClick = Cadastrar;
+Cadastrar('http://localhost:5000/usuario/novo')
+ .then(response => console.log(response.json()))
+ .then(data => console.log(data))
+ .catch(error => console.log(error));
 
-function Cadastrar() {
+ function Cadastrar(url) {
+   const formDados = new FormData(document.querySelector('.formulario-cadastro'))
 
-   return fetch('http://localhost:5000/usuario/${cadastro.value.trim()}',{
-        method: 'POST',
+   /* let jsonFormDados = {}
+
+   for (let [key, value] of formDados.entries()){
+       console.log(formDados)
+       jsonFormDados[key]=value
+   } */
+
+   console.log(formDados);
+
+   return fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(formDados),
         headers: {
-            'Content-type': 'application/json'
-        },
-        body: new FormData(JSON.stringify(document.querySelector('#signup')))
-    })
-        .then(response=>response.json())
-}
+            "Content-Type": "application/json"
+        }
+   })
 
-
-function preencher(){
-    let lista = document.querySelector('#listadeusuarios');
-    fetch('http://localhost:5000/usuarios').then(resposta => {
-        return resposta.json();
-    }).then(dados => {
-        lista.innerHTML = JSON.stringify(dados); 
-    }).catch(erro => {
-        alert("Erro ao cadastrar");
-        alert(erro);
-    });
-}
-
-
-Cadastrar()
-    .then(data => console.log(data))
-    .catch(error => console.log(error));
-
-preencher();
+ };
