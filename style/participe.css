@@ -238,12 +238,12 @@ form{
 
 
 #containPass{
-    width: 49%;
+    width: 100%;
 }
 
 
 #pass{
-    width: 49%; 
+    width: 66%;
     height: 40px;
     border: 2px solid rgb(0, 201, 255);
 }
