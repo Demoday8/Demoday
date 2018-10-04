@@ -139,6 +139,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: white;
 }
 
 form{
@@ -147,6 +148,7 @@ form{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    background-color: white;
 }
 
 .formulario button{
@@ -202,6 +204,7 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 
@@ -235,12 +238,12 @@ form{
 
 
 #containPass{
-    width: 49%;
+    width: 100%;
 }
 
 
 #pass{
-    width: 49%; 
+    width: 66%;
     height: 40px;
     border: 2px solid rgb(0, 201, 255);
 }
@@ -372,10 +375,14 @@ form{
     margin: 5px;
 }
 .boxpp{
+    background-color: white;
     width: 100vw;
 }
 form {
     width: 85%;
+    z-index: 51;
+    position: relative;
+    z-index: 0;
 }
 
 }

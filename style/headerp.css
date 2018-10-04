@@ -81,7 +81,7 @@ header nav button:hover{
     flex-direction: column;
     display: none;
     position: absolute;
-    z-index: 20;
+    z-index: 52;
     right: 20px;
     top: 11px;
     height: 30px;
@@ -118,6 +118,7 @@ header nav button:hover{
 @media screen and (max-width: 720px) {
     header{
         height: 50px;
+        z-index: 1;
     }
     
     header img{
@@ -138,6 +139,7 @@ header nav button:hover{
         transition: 1s;
         border-bottom: 1px solid rgba(0,0,0,0.5);
         animation: colorir 5s infinite;
+        z-index: 1;
     }
 
     .mostrando{

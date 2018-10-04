@@ -4,8 +4,11 @@
 
 
 
-const formToJSON = elements => [].reduce.call(elements, (data, element) =>{
-    data[element.name] = element.value;
+const formulario = elements => [].reduce.call(elements, (data, element) => {
+    const isValidElement = element => {
+        return element.name && element.value;
+    };
+
     return data;
 }, {});
 
@@ -13,12 +16,20 @@ const handleFormSubmit = event => {
 
     event.preventDefault();
 
-    const data = formToJSON(form.elements);
+    const dados = formulario;
 
-    console.log(data);
+    fetch('http://localhost:5000/usuario/novo', {
+        method: 'POST',
+        body: dados,
+    })
+    .then(response => console.log(response.json()))
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+
 };
 
 const form = document.getElementsByClassName('formulario-cadastro')[0];
 
 form.addEventListener('submit', handleFormSubmit);
+
 

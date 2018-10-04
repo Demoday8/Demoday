@@ -466,6 +466,7 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    z-index: 1;
 }
 
 .container-empresa{
@@ -477,6 +478,7 @@ p{
 }
 
 .img-empresa{
+    z-index: 1;
     width: 60%;
     height: 300px;
     overflow: scroll;
@@ -485,8 +487,8 @@ p{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
-    margin-right: 80px;
+    background-color: white;   
+     margin-right: 80px;
     padding: 0;
 }
 
@@ -677,6 +679,7 @@ p{
                 justify-content: space-around;
                 align-items: center;
                 flex-direction: column;
+                z-index: -1;
             }
             .text-empresa{
                 margin: 20px 0px;
@@ -691,9 +694,12 @@ p{
                 text-align: center;
             }
             .img-empresa{
+                z-index: 0;
                 width: 80%;
-                margin: 0;            
+                position: relative;
+                margin: 0; 
             }
+
             .img-box img {
                width: 130px;
             }
